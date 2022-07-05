@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    scroll-padding-top: 10rem;
+    background-color: black;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 3vmax;
+}
+p {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vmax;
+}
