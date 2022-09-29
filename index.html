@@ -15,7 +15,7 @@
   </head>
   <body>
 
-    <header class="sticky-top border-bottom border-secondary border-5">
+    <header class="sticky-top">
       <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
         <button class="navbar-toggler mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -26,41 +26,180 @@
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body text-center">
-            <div class="navbar-brand ms-lg-5">
-              <img src="img/logo/GreenCityLogo.png" width="100vw" alt="Green City logo" />
+            <div class="navbar-brand me-lg-5">
+              <a href="https://argans.co.uk"><img src="img/logo/ARGANS2022_logo.svg" width="150vw" alt="ARGANS logo" /></a>
             </div>
             <ul class="fs-5 fw-bold navbar-nav justify-content-end flex-grow-1 pe-3 mt-3">
-              <li class="nav-item mx-1"><a class="nav-link active" href="#">Home</a></li>
-              <li class="nav-item mx-1"><a class="nav-link" href="#">Our Services</a></li>
+              <li class="nav-item mx-1"><a class="nav-link active" href="#">Our Services</a></li>
               <li class="nav-item mx-1"><a class="nav-link" href="#">Air Quality &amp; Health</a></li>
               <li class="nav-item mx-1"><a class="nav-link" href="#">Urban Green Spaces</a></li>
-              <li class="nav-item mx-1"><a class="nav-link" href="#">About Us</a></li>
+              <li class="nav-item mx-1"><a class="nav-link" href="#">Case Studies</a></li>
               <li class="nav-item mx-1"><a class="nav-link" href="#">Map Viewer</a></li>
               <li class="nav-item mx-3"><a class="nav-link active" href="#">EN</a><a class="nav-link" href="#">FR</a></li>
             </ul>
-            <div class="navbar-brand me-lg-5">
-                <a href="https://argans.co.uk"><img src="img/logo/ARGANS2022_logo.svg" width="150vw" alt="ARGANS logo" /></a>
-            </div>
           </div>
         </div>
       </nav>
     </header>
 
-    <section>
-      <div>
-        <h1 class="display-1 text-light">ARGANS Green City offers a ground-breaking commercial service to support European local authorities develop ambitious Urban Greening Plans.
-        </h1>
-      </div>
-    </section>
+    <main class="container-fluid text-light" role="main">
+      <div class="row">
+        <article class="col-12 col-xxl-9 p-3">
+          <section class="row px-3" id="services">
+            <div class="col-md-6 px-3">
+              <img src="img/logo/GreenCityLogo.png" class="d-block w-100" alt="Green City logo">
+              <p class="display-1 text-center">A ground-breaking service supporting Urban Greening</p>
+            </div>
 
-    <footer class="container-fluid text-light bg-dark px-5 py-3 pb-3 border-top border-secondary border-5">
+            <div class="col-md-6 px-3">
+              <div class="card-group">
+                <div class="card bg-transparent">
+                  <img src="img/logo/UrbanReforestation.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Improve Air Quality</h5>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+                <div class="card bg-transparent">
+                  <img src="img/logo/UrbanReforestation.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Enhance Biodiversity</h5>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+                <div class="card bg-transparent">
+                  <img src="img/logo/UrbanReforestation.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Climate Resilience</h5>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+              <p class="display-5 text-center">
+                Our services offer a unique end-to-end management solution to support municipal planting strategies according to "best practices" recommendations.
+              </p>
+              <div class="accordion accordian-flush rounded mb-5" id="accordionExample">
+                <div class="accordion-item bg-transparent ">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fs-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Full Satellite-derived City-wide Green Space Inventory
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-light fs-4">
+                      <p>ARGANS acquire commercial Very High Resolution (VHR) satellite images, which have a spatial resolution of less than 50cm, that enables us to detect and identify individual urban trees and to classify them accordingly e.g.,  species, height, crown diameter etc.</p>
+                      <p>Satellite remote sensing allows us to do this for the entire city, and prepare an accurate chart of green spaces within the city and a detailed inventory of the public and private individual trees, shrubs and grass (lawn/turf).</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent ">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button fs-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Quantifying the Effect of Green Space on Air Quality
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-light fs-4">
+                      <p>Knowledge of species and characteristics of the urban greenery allows us to estimate the environmental benefits of the urban tree heritage in measurable units at the scale of the entire city.</p>
+                      <p>We provide quantified estimates of carbon storage, carbon dioxide sequestration, and air pollutant removal capacity in units of tons of nitrogen dioxide, ozone, and particles per year.</p>
+                      <p>To quantify the benefits we provide charts of Urban Heat Islands for the entire city and an estimate of thermal comfort (Universal Thermal Comfort Index).</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent ">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button fs-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Recommendations for Healthier Air and Greening Plans
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-light fs-4">
+                      <p>ARGANS are not only providing the eye from the sky perspective. Our skilled staff offer consultancy services providing 'best practice' recommendations for urban regreening projects.</p>
+                      <p>Depending on your territory and environmental conditions ARGANS provides a list of suitable species to plant for healthier air in the city and open areas available. Each tree species is assessed for its resistance to local conditions (e.g., drought tolerance, pests and diseases), biological characteristics and capacity to absorb air pollutants.</p>
+                      <p>We also provide training to authorities in the development of Urban Greening Plans and monitoring the execution and efficacy.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent ">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button fs-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Assessment of Health and Economic Benefits
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse fs-3 collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-light fs-4">
+                      <p>To fully appreciate the benefits of an Urban Greening Plan, ARGANS quantifies the socio-economic benefits derived from planting programs in a given area in units policy makers understand: reduction in premature deaths and hospitalizations for respiratory and cardiovascular illnesses and the related costs.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <figure>
+              <img src="img/output/processedImage.png" class="figure-img fluid-img rounded" width="100%" alt="indivudal trees seen from satellite">
+              <figcaption class="figure-caption">Individual trees are identified from satellite images and rendered in different colours depending on species.</figcaption>
+            </figure>
+          </section>
+        </article>
+        <aside class="bg-dark d-flex flex-column col-12 col-xxl-3 p-3" id="sidebar">
+          <section class="row px-3" aria-labelledby="LearnMore">
+            <div class="col-12 col-md-6 col-xxl-12">
+              <h1 id="LearnMore">Learn More</h1>
+              <p class="lead mb-3">According to a 2022 report 99% of the world population breathe air that exceeds WHO guideline limits and contains high levels of pollutants. Since 2000, the levels of these pollutants in cities has risen significantly. </p>
+            </div>
+            <div class="col-12 col-md-6 col-xxl-12">
+              <div class="col px-3 d-flex justify-content-center align-items-center">
+                <div class="card bg-secondary mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="img/logo/GreenCityLogo.png" class="img-fluid rounded-start" alt="Photo of Pierre Sicard">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Air Quality &amp; Health</h5>
+                        <p class="card-text">Policies for a cleaner urban environment</p>
+                        <p class="card-text"><small class="text-dark">Read more ></small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="row px-3" aria-labelledby="AboutUs">
+            <div class="col-12 col-md-6 col-xxl-12">
+              <h1 id="AboutUs">About Us</h1>
+              <p class="lead mb-3">ARGANS Limited, is a fast-growing UK SME that has a reputation for excellence in delivering Earth Observation satellite remote sensing applications and services, innovative solutions in data analytics, Geographical Information Systems and the use of remote sensing data to support satellite derived bathymetry, coastal charting and mapping, climate change monitoring, environmental information, and geospatial intelligence.</p>
+            </div>
+            <div class="col-12 col-md-6 col-xxl-12">
+              <div class="col px-3 d-flex justify-content-center align-items-center">
+                <div class="card bg-secondary mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Dr Pierre Sicard</h5>
+                        <p class="card-text">Expert on the impact assessment of air pollution and climate change on vegetation and urban forestry.</p>
+                        <p class="card-text"><small class="text-dark">Co-ordinator & Lead Scientist</small></p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="img/logo/GreenCityLogo.png" class="img-fluid rounded-start" alt="Photo of Pierre Sicard">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>Dr Pierre Sicard, who has 80 peer-reviewed publications, is Deputy Coordinator of the RG 8.04.00 "Air Pollution & Climate Change" under the International Union of Forest Research Organizations (IUFRO) and involved as UNECE Expert Panel on Clean Air in Cities and active in the EU Clean Air Forum</p>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="container-fluid text-light bg-dark px-5 py-3 pb-3">
       <div class="row justify-content-between">
         <div class="col-md-12 col-lg-6 text-center text-md-start">
-          <h1 class="mb-3">About</h1>
-          <p class="lead mb-3">ARGANS, is a fast-growing UK SME specialising in satellite remote sensing applications and services, delivering innovative solutions to satellite derived bathymetry, coastal charting and mapping, climate change monitoring, environmental information, and geospatial intelligence.</p>
-          <p class="mb-3">ARGANS, a member of the ACRI Group, is based in Plymouth, UK with offices in Sophia-Antipolis and Toulouse, France.</p>
+          <p class="mb-3 text-center">ARGANS, a member of the ACRI Group, is based in Plymouth, UK with offices in Sophia-Antipolis and Toulouse, France.</p>
           <div class="mb-5">
-            <a href="https://argans.co.uk"><img class="img-fluid" src="img/logo/ARGANS2022_logo.svg"  width="25%" alt="ARGANS company logo"/></a>
+            <a href="https://argans.co.uk"><img class="img-fluid" src="img/logo/ARGANS2022_logo.svg" alt="ARGANS company logo"/></a>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 offset-lg-1 text-center text-md-start">
