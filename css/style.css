@@ -14,7 +14,7 @@ main {
     position: relative;
     width: 100%;
     display: flex;
-    background-image: linear-gradient(black, rgb(0,192,255));
+    background-image: linear-gradient(#464646, #065A22);
     background-position: bottom;
     background-size: 100%, 100%;
 }
