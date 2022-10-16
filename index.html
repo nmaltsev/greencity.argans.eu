@@ -13,10 +13,10 @@
       ARGANS | Green City | Home
     </title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#top-navbar" data-bs-offset="0">
 
     <header class="sticky-top">
-      <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-xl navbar-dark bg-dark" id="top-navbar">
         <button class="navbar-toggler mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,9 +30,9 @@
               <a href="https://argans.co.uk"><img src="img/logo/ARGANS2022_logo.svg" width="150vw" alt="ARGANS logo" /></a>
             </div>
             <ul class="fs-5 fw-bold navbar-nav justify-content-end flex-grow-1 pe-3 mt-3">
-              <li class="nav-item mx-1"><a class="nav-link active" href="#">Our Services</a></li>
-              <li class="nav-item mx-1"><a class="nav-link" href="#">Air Quality &amp; Health</a></li>
-              <li class="nav-item mx-1"><a class="nav-link" href="#">Urban Green Spaces</a></li>
+              <li class="nav-item mx-1"><a class="nav-link active" href="#services">Our Services</a></li>
+              <li class="nav-item mx-1"><a class="nav-link" href="#airQuality">Air Quality &amp; Health</a></li>
+              <li class="nav-item mx-1"><a class="nav-link" href="#urbanGreening">Urban Green Spaces</a></li>
               <li class="nav-item mx-1"><a class="nav-link" href="#">Map Viewer</a></li>
               <li class="nav-item mx-3"><a class="nav-link active" href="#">EN</a><a class="nav-link" href="#">FR</a></li>
             </ul>
@@ -53,20 +53,20 @@
             <div class="col-md-6 px-3">
               <div class="d-flex">
                 <div class="card-group">
-                  <div class="card bg-transparent">
-                    <img src="img/logo/UrbanReforestation.png" class="card-img-top" alt="...">
+                  <div class="card bg-transparent p-3">
+                    <img src="img/icon/clean_air_icon.png" class="card-img-top" alt="clean air icon">
                     <div class="card-body">
                       <h5 class="card-title text-center">Improve Air Quality</h5>
                     </div>
                   </div>
-                  <div class="card bg-transparent">
-                    <img src="img/logo/UrbanReforestation.png" class="card-img-top" alt="...">
+                  <div class="card bg-transparent p-3">
+                    <img src="img/icon/bee_icon.png" class="card-img-top" alt="enhance biodiversity icon">
                     <div class="card-body">
                       <h5 class="card-title text-center">Enhance Biodiversity</h5>
                     </div>
                   </div>
-                  <div class="card bg-transparent">
-                    <img src="img/logo/UrbanReforestation.png" class="card-img-top" alt="...">
+                  <div class="card bg-transparent p-3">
+                    <img src="img/icon/resilience_icon.png" class="card-img-top" alt="climate resilience icon">
                     <div class="card-body">
                       <h5 class="card-title text-center">Climate Resilience</h5>
                     </div>
@@ -133,7 +133,7 @@
               </div>
             </div>
             <figure>
-              <img src="img/output/processedImage.png" class="figure-img fluid-img rounded" width="100%" alt="individual trees seen from satellite">
+              <img src="img/gfx/processedImage.png" class="figure-img fluid-img rounded" width="100%" alt="individual trees seen from satellite">
               <figcaption class="figure-caption">Individual trees are identified from satellite images and rendered in different colours depending on species.</figcaption>
             </figure>
           </section>
@@ -142,11 +142,11 @@
           <section class="row" aria-labelledby="Air Quality">
             <div class="col-12 col-md-6 col-xxl-12">
               <h1>Air Quality</h1>
-              <p class="lead mb-3">According to a 2022 report 99% of the world population breathe air that exceeds WHO guideline limits and contains high levels of pollutants. Since 2000, the levels of these pollutants in cities has risen significantly.</p>
+              <p class="lead mb-3">Since 2000, the levels of airbourne pollutants in cities has risen significantly. According to a 2022 report, 99% of the world's population breathe air that exceeds the WHO air quality guidelines and contains high levels of pollutants.</p>
             </div>
             <div class="col-12 col-md-6 col-xxl-12">
               <div class="col d-flex justify-content-start">
-                <div class="card bg-secondary mb-3" style="max-width: 540px;">
+                <div class="card bg-secondary mb-3 mx-auto" style="max-width: 540px;">
                   <div class="row g-0">
                     <div class="col-md-4">
                       <img src="img/logo/GreenCityLogo.png" class="img-fluid rounded-start" alt="Photo of Pierre Sicard">
@@ -155,7 +155,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Air Quality &amp; Health</h5>
                         <p class="card-text">Air pollution is attributed to 11.65% of deaths globally, attributable to 7 million premature deaths annually.</p>
-                        <p class="card-text"><small class="text-dark">Read more ></small></p>
+                        <p class="card-text"><a class="text-decoration-none" href="#airQuality"><small class="text-dark">Read more ></small></a></p>
                       </div>
                     </div>
                   </div>
@@ -170,7 +170,7 @@
             </div>
             <div class="col-12 col-md-6 col-xxl-12">
               <div class="col d-flex align-items-center">
-                <div class="card bg-secondary mb-3" style="max-width: 540px;">
+                <div class="card bg-secondary mb-3 mx-auto" style="max-width: 540px;">
                   <div class="row g-0">
                     <div class="col-md-4">
                       <img src="img/logo/GreenCityLogo.png" class="img-fluid rounded-start" alt="Photo of Pierre Sicard">
@@ -179,7 +179,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Green Spaces</h5>
                         <p class="card-text">The European Union commits to planting at least 3 billion additional trees in Europe by 2030.</p>
-                        <p class="card-text"><small class="text-dark">Read more ></small></p>
+                        <p class="card-text"><a class="text-decoration-none" href="#urbanGreening"><small class="text-dark">Read more ></small></a></p>
                       </div>
                     </div>
                   </div>
@@ -194,7 +194,7 @@
             </div>
             <div class="col-12 col-md-6 col-xxl-12">
               <div class="col d-flex align-items-center">
-                <div class="card bg-secondary mb-3" style="max-width: 540px;">
+                <div class="card bg-secondary mb-3 mx-auto" style="max-width: 540px;">
                   <div class="row g-0">
                     <div class="col-md-8">
                       <div class="card-body">
@@ -203,8 +203,8 @@
                         <p class="card-text"><small class="text-dark">Co-ordinator & Lead Scientist</small></p>
                       </div>
                     </div>
-                    <div class="col-md-4">
-                      <img src="img/logo/GreenCityLogo.png" class="img-fluid rounded-start" alt="Photo of Pierre Sicard">
+                    <div class="col-md-4 text-center my-auto p-2">
+                      <img src="img/gfx/PierreSicard.jpg" class="img-fluid rounded-start" alt="Photo of Pierre Sicard">
                     </div>
                   </div>
                 </div>
@@ -217,7 +217,7 @@
               <h1>Contact Us</h1>
               <p class="lead">Request a consultation with Dr Pierre Sicard to discuss how ARGANS might assist with your municipal greening strategy.</p>
               <div class="text-center py-3">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Email Green City</a>
+                <a class="btn btn-primary btn-lg" onclick="decode('cHNpY2FyZEBhcmdhbnMuZXUK')" role="button">Email Green City</a>
               </div>
             </div>
           </div>
@@ -324,7 +324,7 @@
             </section>
           </article>
       </div>
-      <div class="row text-dar">
+      <div class="row">
         <article class="col-12 p-3">
           <section class="row px-3 align-items-center" id="greenSpace">
             <div class="col-lg-8 px-3">
@@ -335,10 +335,10 @@
                   <div class="col px-3 d-flex justify-content-center align-items-center">
                     <div class="card bg-secondary mb-3" style="max-width: 540px;">
                       <div class="row g-0">
-                        <div class="col-md-4">
-                          <img src="img/logo/GreenCityLogo.png" class="img-fluid rounded-start" alt="Isoprene Molecule">
+                        <div class="col-12 col-xl-4 text-center my-auto">
+                          <img src="img/gfx/Isoprene.svg" class="img-fluid rounded-start" alt="Isoprene Molecule">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-12 col-xl-8">
                           <div class="card-body">
                             <h5 class="card-title">Isoprene</h5>
                             <p class="card-text">Isoprene is ubiquitous. It is the building block of terpenes and these Volatile Organic Compound (VOC) poses both a primary health risk and indirectly through photochemical reactions producing ozone and PM25 particulates, elements of smog.</p>
@@ -503,14 +503,15 @@
             <p>When you visit this website, we collect a data profile regarding your online behaviour on our website. This may include your IP address, user-agent string, browser type, operating system, referral URLs, device information (e.g., device IDs), device settings, mobile carrier name, pages visited, links clicked, the requested URL, and search terms.</p>
             <p>This data is automatically logged, it satisfies a legitimate interest pursued by the controller, ARGANS, [GDPR Article 6(1)f] to comply with standard security practices, protecting our legal rights and interests, and enforcing our rules and policies.</p>
             <h5 class="mt-2">Our Cookie Policy</h5>
-            <p>A Google Analytics tracking cookie is attached to this webpage. The standard tracking cookie collects your IP address, which is considered by GDPR as personal information. Your IP address is anonymised before being sent to Google Analytics for processing, hence GDPR is satisfied and cookie consent is not needed.</p>
+            <p>This website also uses Google Analytics, a web analytics service provided by Google, Inc. ("Google"). Google Analytics uses Cookies. A Google Analytics tracking cookie is attached to this webpage. The standard tracking cookie collects your IP address, which is considered by GDPR as personal information. However, on this site your IP address is anonymised before being sent to Google Analytics for processing, hence GDPR is satisfied and cookie consent is not needed.</p>
             <p>Please note that cookies don't allow us to gain control of your computer in any way. They are strictly used to monitor visits to the website.</p>
             <p>If you want to disable cookies, you can do so by accessing the settings of your internet browser.</p>
             <h5 class="mt-2">Links to Other Websites</h5>
-            <p>Our website contains links that lead to other websites. If you click on these links ARGANS is not held responsible for your data and privacy protection. Visiting these websites is not governed by this privacy policy.</p>
+            <p>Our website contains links that lead to other websites, including social media sites from Facebook, Twitter and LinkedIn. If you click on these links ARGANS is not held responsible for your data and privacy protection. Visiting these websites is not governed by this privacy policy.</p>
             <h5 class="mt-2">Data Security &amp; Retention</h5>
             <p>ARGANS is committed to data security and has done all in its power to prevent data theft, unauthorized access, and disclosure by implementing technologies and software, which help us safegaurd all data we collect.</p>
             <p>Logged data is retained for a month and subsequently over-written.</p>
+            <p>By visiting our website, you declare your consent to the above provisions.</p>
             <p class="close text-end"<a href="#privacy" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="privacy"><i class="fa fa-chevron-circle-up"></i><span class="label">&nbsp;close</span></a></p>
           </div>
           <div class="collapse col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3 mt-5" id="disclaimer" data-bs-parent="#accordian-group">

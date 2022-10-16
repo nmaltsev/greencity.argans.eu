@@ -25,3 +25,9 @@ $("#copyright").on("shown.bs.collapse", function () {
     100
   );
 });
+
+// email obfuscation
+function decode(encoded) {
+  var address = atob(encoded);
+  window.location.href = "mailto:" + address + "?subject=GreenCity Enquiry";
+}
