@@ -40,7 +40,7 @@ aside {
   background-color: #e9ffc4;
   padding: 1%;
 }
-.display-3, .display-5, h1, .blockquote-footer {
+.display-3, .display-5, h1, .blockquote-footer, .fs-1 {
   color: #e9ffc4;
 }
 
@@ -66,15 +66,23 @@ aside {
 @media (min-width:768px) {
   #iconbox h5 {
     font-size: 3vw;
+  },
+  #services.display-5 {
+    font-size: 1.5vw;
   }
 }
 @media (min-width:1024px) {
   #iconbox h5 {
     font-size: 1vw;
+  },
+  #services.display-5 {
+    font-size: 2vw;
   }
 }
 @media (min-width:1280px) {
-
+  #services.display-5 {
+    font-size: 3vw;
+  }
 }
 /* FOOTER */
 .social-buttons,
