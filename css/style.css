@@ -25,6 +25,10 @@ aside {
   border-radius: 8px;
 }
 
+p, h1, button, li {
+  font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 #navbar .active, span {
   color: #e9ffc4;
 }

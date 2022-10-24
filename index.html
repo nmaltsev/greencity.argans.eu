@@ -4,23 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <meta name="theme-color" content="#065A22" />
+    <meta name="msapplication-navbutton-color" content="#065A22" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#065A22" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>
-      ARGANS | Green City | Home
+      ARGANS | Green City
     </title>
+    <meta name="author" content="Stephen Emsley" />
+    <meta name="copyright" content="&copy; 2022 ARGANS Limited" />
+    <meta name="description" content="ARGANS use Very High Resolution satellite images to identify individual trees by species paving the way to a managered urban planting strategy to combat urban air pollution." />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ARGANS | Green Cities for Cleaner Air Quality " />
+    <meta property="og:description" content="ARGANS use Very High Resolution satellite images to identify individual trees by species paving the way to a managered urban planting strategy to combat urban air pollution." />
+    <meta property="og:url" content="https://greencity.argans.eu" />
+    <meta property="og:site_name" content="ARGANS | Green City" />
+    <meta property="article:publisher" content="https://www.facebook.com/ArgansLtd/" />
+    <meta property="article:modified_time" content="2022-07-11T17:44:17+00:00" />
+    <meta property="og:image" content="https://greencity.argans.eu/img/icon/" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="960" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content="https://marineplastic.argans.co.uk/img/metaARGplastic.jpg" />
+    <meta name="twitter:site" content="@ARGANS_Ltd" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@500&display=swap" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
   </head>
   <body data-bs-spy="scroll" data-bs-target="#top-navbar" data-bs-offset="0">
 
     <header class="sticky-top">
       <nav class="navbar navbar-expand-xl navbar-dark bg-dark" id="top-navbar">
-        <button class="navbar-toggler mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler mx-2" id="nav_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="navbar" aria-labelledby="navbarLabel">
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="navbarLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title text-light" id="navbarLabel">ARGANS Green City</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -52,8 +77,8 @@
         <article class="col-12 col-xxl-9 px-3">
           <section class="row px-3" id="top">
             <div class="d-flex flex-column col mt-0 px-3 align-items-center justify-content-between">
-              <img src="img/logo/GreenCityLogo.png" class="d-block w-100" alt="Green City logo">
-              <p class="display-3 text-center">A ground-breaking service supporting Urban Clean Air</p>
+              <img src="img/logo/GreenCityLogo_640x640.svg" class="d-block w-100" alt="Green City logo">
+              <p class="display-5 text-center">A ground-breaking service supporting Urban Clean Air</p>
               <div class="d-flex mt-5">
                 <div class="card-group" id="iconbox">
                   <div class="card bg-transparent p-3">
@@ -78,7 +103,7 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <p class="display-5 text-center mb-5">
+              <p class="display-6 text-center mb-5">
                 Our services offer a unique end-to-end management solution to support municipal 'green space' strategies.
               </p>
               <div class="accordion accordian-flush rounded mb-5" id="accordionServices">
@@ -138,7 +163,9 @@
               </div>
             </div>
             <figure>
-              <img src="img/gfx/processedImage.png" class="figure-img fluid-img rounded mt-3 px-0 px-lg-3" width="100%" alt="individual trees seen from satellite">
+              <source media="(min-width:1280px)" srcset="img/gfx/output_00_2400x1550.png">
+              <source media="(max-width:800px)" srcset="img/gfx/output_00_768x495.jpg">
+              <img src="img/gfx/output_00_1024x659.jpg" class="figure-img fluid-img rounded mt-3 px-0 px-lg-3" width="100%" alt="individual trees seen from satellite">
               <figcaption class="figure-caption text-light text-center fs-4 my-3">Very High Resolution (VHR) satellite images allows individual trees to be detected and species identified, rendered here in different colours, providing an accurate inventory of urban flora and mitigation effect on air quality and carbon footprint.</figcaption>
             </figure>
           </section>
@@ -232,7 +259,7 @@
             </div>
           </div>
         </aside>
-        <div class="row text-light text-center text-sm-start p-md-5 mt-5" id="airQuality">
+        <div class="row text-light text-center text-sm-start px-3 p-md-5 mt-5" id="airQuality">
           <article class="col-12">
             <section class="row align-items-start g-5">
               <div class="col-lg-6">
@@ -248,18 +275,18 @@
                 <p>The European Environment Agency 2021 Zero Action Plan sets the target to reduce the number of premature deaths due to exposure to fine particulate matter by 55% by 2030, as compared to 2005. [EEP 2021]</p>
                 <p>The European regulations for air quality (e.g., Air Quality Directive 2008/50/EC) and other environmental policies (e.g., EU Biodiversity Strategy 2030; EU Pollinators Initiative) commit territories and cities of at least 20,000 inhabitants to publish their Carbon Footprint every three years, a Territorial Climate Air and Energy Plan every five years and to develop an Urban Greening Plan.</p>
                 <picture>
-                  <img src="img/gfx/BenefitsUrbanFlora.png" class="img-fluid rounded-start mt-3" alt="Benefits of Urban Flora">
-                  <figcaption class="figure-caption text-light text-center fs-6 my-3">Urban planting and re-naturing or 'greening' public spaces has a major role in reducing air pollution and improving air quality, mitigating climate change effects, enhancing biodiversity, and promoting 'wellness' by providing recreational areas and fostering social cohesion.</figcaption>
+                  <img src="img/gfx/BenefitsUrbanFlora.png" class="img-fluid rounded mt-3" alt="Benefits of Urban Flora">
+                  <figcaption class="figure-caption text-light text-center fs-6 py-3">Urban planting and re-naturing or 'greening' public spaces has a major role in reducing air pollution and improving air quality, mitigating climate change effects, enhancing biodiversity, and promoting 'wellness' by providing recreational areas and fostering social cohesion.</figcaption>
                 </picture>
               </div>
             </section>
           </article>
         </div>
-        <div class="row text-light text-center text-sm-start p-0 m-0 p-md-5 mt-3" id="urbanGreening">
+        <div class="row text-light text-center text-sm-start px-3 m-0 p-md-5 mt-3" id="urbanGreening">
           <article class="col-12">
             <section class="row align-items-end g-5">
               <div class="col-xl-7">
-                <h1 class="mb-3 text-center">Urban Flora means Cleaner Air</h1>
+                <h1 class="mb-3 text-start">Greener Cities, Cleaner Air</h1>
                 <p>Urban reforestation, i.e., increasing the tree density in cities and peri-urban reforestation near densely populated cities, is a strategy to mitigate the air pollution and climate change effects, enhance biodiversity, and provide recreational areas.</p>
                 <p>Planting trees can help improve air quality and meet clean air standards in cities. Trees have a remarkable range of traits that can help reduce urban air pollution, and cities around the world are looking to develop planting strategies to harness the benefits of public green spaces.</p>
                 <blockquote class="blockquote text-center my-5">
@@ -365,7 +392,7 @@
             </section>
           </article>
         </div>
-        <div class="row text-light text-center text-sm-start p-0 m-0 p-md-5 g-5" id="services">
+        <div class="row text-light text-center text-sm-start px-3 m-0 p-md-5 g-5" id="services">
           <article class="col-12">
             <div class="text-center">
               <p class="display-5">Uniquely, compared to competitors, our process offers an end-to-end management solution to support municipal planting strategies according to "best practices" recommendations.</p>
@@ -453,7 +480,7 @@
                     <picture>
                       <source media="(min-width:1280px)" srcset="img/gfx/output_02_900x640.png">
                       <source media="(max-width:800px)" srcset="img/gfx/output_02_450x320.jpg">
-                      <img class="d-block w-100" src="img/gfx/output_02_900x640.jpg" alt="ix-en-Provence, France"/>
+                      <img class="d-block w-100" src="img/gfx/output_02_900x640.jpg" alt="Aix-en-Provence, France"/>
                       <figcaption class="figure-caption text-light text-center fs-6 my-3">Aix-en-Provence, France</figcaption>
                     </picture>
                   </div>
