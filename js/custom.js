@@ -31,3 +31,7 @@ function decode(encoded) {
   var address = atob(encoded);
   window.location.href = "mailto:" + address + "?subject=GreenCity Enquiry";
 }
+
+$(function(){
+  $('.selectpicker').selectpicker();
+});
