@@ -32,6 +32,11 @@ function decode(encoded) {
   window.location.href = "mailto:" + address + "?subject=GreenCity Enquiry";
 }
 
-$(function(){
-  $('.selectpicker').selectpicker();
+$("#language").on("change", function (e) {
+  var selected = document.querySelector("#language").selectedOptions[0].value;
+  if (selected[0] === "E") {
+    window.location = "index.html";
+  } else {
+    window.location = "index_FR.html";
+  }
 });
