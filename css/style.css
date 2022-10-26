@@ -67,6 +67,33 @@ p, h1, button, li {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
 }
 
+#social-media a {
+  width: 100%;
+  padding: .5em 1em;
+  font-weight: 500;
+  text-decoration: none;
+  color: #FFF;
+}
+
+#social-media [href*="twitter.com"] {
+  background-color: #55acee;
+  border-color: #55acee;
+}
+
+#social-media [href*="facebook.com"] {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+#social-media [href*="linkedin.com"] {
+  background-color: #0082ca;
+  border-color: #0082ca;
+}
+
+#social-media .fa:hover {
+  opacity: 0.7;
+}
+
 @media (min-width:768px) {
   #iconbox h5 {
     font-size: 3vw;
@@ -87,53 +114,4 @@ p, h1, button, li {
   #services.display-5 {
     font-size: 3vw;
   }
-}
-/* FOOTER */
-.social-buttons,
-.social-buttons li {
-	display: flex;
-	padding: 0;
-	margin: 0;
-}
-.social-buttons {
-	width: 50%;
-	list-style: none;
-	flex-wrap: wrap;
-}
-.social-buttons li {
-	flex-basis: 25%;
-	flex-shrink: 0;
-	flex-grow: 1;
-}
-.social-buttons a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	padding: .5em 1em;
-	font-weight: 500;
-	text-decoration: none;
-	color: #FFF;
-}
-.social-buttons i {
-	margin-right: .5em;
-}
-.social-buttons [href*="twitter.com"] {
-	background: #1da1f2;
-}
-.social-buttons [href*="facebook.com"] {
-	background: #3b5998;
-}
-.social-buttons [href*="linkedin.com"] {
-	background: #0077b5;
-}
-.social-buttons .fa:hover {
-    opacity: 0.7;
-}
-.social-buttons .fa {
-    padding: 5px;
-    font-size: 20px;
-    width: 10px;
-    text-align: center;
-    text-decoration: none;
 }
