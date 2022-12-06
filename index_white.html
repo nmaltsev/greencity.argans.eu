@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QLF8ZRTGRW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QLF8ZRTGRW');
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+    <title>
+      ARGANS | Green City
+    </title>
+    <meta name="author" content="Stephen Emsley" />
+    <meta name="copyright" content="&copy; 2022 ARGANS Limited" />
+    <meta name="language" content="english" />
+    <meta name="keywords" content="green city,re-forestation,air quality,urban flora,green spaces,municipal planting,air pollution,greening,VOC,isoprene,remote sensing,earth observation,ARGANS" />
+    <meta name="description" content="ARGANS use Very High Resolution satellite images to identify individual trees by species paving the way to a managed urban planting strategy to combat urban air pollution." />
+    <link rel="icon" type="image/png" href="img/logo/favicon.png" />
+    <link rel="apple-touch-icon" href="img/logo/touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/logo/touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="img/logo/touch-icon-ipad-retina.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo/touch-icon-iphone-retina.png" />
+    <link rel="icon" sizes="192x192" href="img/logo/android-icon.png" />
+    <meta name="msapplication-square310x310logo" content="img/logo/microsoft-icon.png" />
+    <meta name="theme-color" content="#00C0FF" />
+    <meta name="msapplication-navbutton-color" content="#00C0FF" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#00C0FF" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ARGANS | Green Cities for Cleaner Air Quality " />
+    <meta property="og:description" content="ARGANS use Very High Resolution satellite images to identify individual trees by species paving the way to a managed urban planting strategy to combat urban air pollution." />
+    <meta property="og:url" content="https://greencity.argans.eu" />
+    <meta property="og:site_name" content="ARGANS | Green City" />
+    <meta property="article:publisher" content="https://www.facebook.com/ArgansLtd/" />
+    <meta property="article:modified_time" content="2022-07-11T17:44:17+00:00" />
+    <meta property="og:image" content="https://greencity.argans.eu/img/icon/GreenCityLogo_640x640.svg" />
+    <meta property="og:image:width" content="640" />
+    <meta property="og:image:height" content="640" />
+    <meta property="og:image:type" content="image/svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content="https://greencity.argans.eu/img/gfx/output_00_1024x659.jpg" />
+    <meta name="twitter:site" content="@ARGANS_Ltd" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@500&display=swap" />
+    <link rel="stylesheet" href="css/style_white.css" type="text/css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#top-navbar" data-bs-offset="0">
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-xl navbar-dark bg-dark" id="top-navbar">
+        <button class="navbar-toggler mx-2" id="nav_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="navbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-light" id="navbarLabel">ARGANS Green City</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body text-center">
+            <div class="navbar-brand mb-5 mb-xl-1 ms-xl-5">
+              <a href="https://argans.co.uk"><img src="img/logo/ARGANS2022_logo.svg" width="150vw" alt="ARGANS logo" /></a>
+            </div>
+            <ul class="fs-5 fw-bold navbar-nav justify-content-end flex-grow-1 pe-3 mt-3">
+              <li class="nav-item mx-1"><a class="nav-link active" href="#top">Home</a></li>
+              <li class="nav-item mx-1"><a class="nav-link" href="#airQuality">Air Quality</a></li>
+              <li class="nav-item mx-1"><a class="nav-link" href="#urbanGreening">Green Spaces</a></li>
+              <li class="nav-item mx-1"><a class="nav-link" href="#services">Services</a></li>
+              <li class="nav-item mx-1"><a class="nav-link" href="map/index.html" target="_blank">Map Viewer</a></li>
+            </ul>
+            <div class="pe-xl-5 mt-5 mt-xl-0">
+              <select class="selectpicker" data-width="fit" id="language">
+                <option data-content='ER'>English&nbsp; </option>
+                <option data-content='FR'>Français&nbsp;</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-fluid text-dark p-2 p-lg-5" role="main">
+      <div class="row">
+        <article class="col-12 px-3"> <!-- col-xxl-9 -->
+          <section class="row px-3" id="top">
+            <div class="d-flex flex-column col mt-0 px-3 align-items-center justify-content-between">
+              <img src="img/logo/AirTree Logo.png" class="d-block w-100" alt="Green City logo">
+              <p class="display-5 text-center">A ground-breaking service supporting Urban Clean Air</p>
+              <div class="d-flex mt-5">
+                <div class="card-group" id="iconbox">
+                  <div class="card bg-transparent p-3">
+                    <img src="img/icon/clean_air_icon.png" class="card-img-top" alt="clean air icon">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Improve Air Quality</h5>
+                    </div>
+                  </div>
+                  <div class="card bg-transparent p-3">
+                    <img src="img/icon/bee_icon.png" class="card-img-top" alt="enhance biodiversity icon">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Enhance Biodiversity</h5>
+                    </div>
+                  </div>
+                  <div class="card bg-transparent p-3">
+                    <img src="img/icon/resilience_icon.png" class="card-img-top" alt="climate resilience icon">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Climate Resilience</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <p class="display-6 text-center mb-5">
+                Our services offer a unique end-to-end management solution to support municipal 'green space' strategies.
+              </p>
+              <div class="accordion accordian-flush rounded mb-5" id="accordionServices">
+                <div class="accordion-item bg-transparent">
+                  <h2 class="accordion-header" id="headInventory">
+                    <button class="accordion-button fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#inventory" aria-expanded="true" aria-controls="inventory">
+                      Satellite-derived City-wide Green Space Inventory
+                    </button>
+                  </h2>
+                  <div id="inventory" class="accordion-collapse collapse show" aria-labelledby="headInventory" data-bs-parent="#accordionServices">
+                    <div class="accordion-body text-dark fs-5">
+                      <p>ARGANS acquire commercial Very High Resolution (VHR) satellite images, which have a spatial resolution of less than 50cm, that enables us to detect and identify individual urban trees and to classify them accordingly e.g.,  species, height, crown diameter etc.</p>
+                      <p>Satellite remote sensing allows us to do this for the entire city, and prepare an accurate chart of green spaces within the city and a detailed inventory of the public and private individual trees, shrubs and grass.</p>
+                      <p><em>This service is billed at € 2,500 excluding tax + € 50 per square kilometre of area analyzed.</em></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent ">
+                  <h2 class="accordion-header" id="headQuantify">
+                    <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#quantify" aria-expanded="false" aria-controls="quantify">
+                      Quantifying the Effect of Green Space on Air Quality
+                    </button>
+                  </h2>
+                  <div id="quantify" class="accordion-collapse collapse" aria-labelledby="headQuantify" data-bs-parent="#accordionServices">
+                    <div class="accordion-body text-dark fs-5">
+                      <p>Knowledge of species and characteristics of the urban greenery allows us to estimate the environmental benefits of the urban tree heritage in measurable units at the scale of the entire city.</p>
+                      <p>We provide quantified estimates of carbon storage, carbon dioxide sequestration, and air pollutant removal capacity in units of tons of nitrogen dioxide, ozone, and particles per year.</p>
+                      <p>To quantify the benefits we provide charts of Urban Heat Islands for the entire city and an estimate of thermal comfort (Universal Thermal Comfort Index).</p>
+                      <p><em>This service costs from € 2,500 excluding tax.</em></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent ">
+                  <h2 class="accordion-header" id="headRecommend">
+                    <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#recommend" aria-expanded="false" aria-controls="recommend">
+                      Recommendations for Clean Air and Greening Plans
+                    </button>
+                  </h2>
+                  <div id="recommend" class="accordion-collapse collapse" aria-labelledby="headRecommend" data-bs-parent="#accordionServices">
+                    <div class="accordion-body text-dark fs-5">
+                      <p>ARGANS are not only providing the eye from the sky perspective. Our skilled staff offer consultancy services providing 'best practice' recommendations for urban regreening projects.</p>
+                      <p>Depending on your territory and environmental conditions ARGANS provides a list of suitable species to plant for healthier air in the city and open areas available. Each tree species is assessed for its resistance to local conditions (e.g., drought tolerance, pests and diseases), biological characteristics and capacity to absorb air pollutants.</p>
+                      <p>We also provide training to authorities in the development of Urban Greening Plans and monitoring the execution and efficacy.</p>
+                      <p><em>This service is billed at € 5,000 excluding tax + € 50 per square kilometre of area analyzed.</em></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent ">
+                  <h2 class="accordion-header" id="headingAssess">
+                    <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#assess" aria-expanded="false" aria-controls="assess">
+                      Assessment of Health and Economic Benefits
+                    </button>
+                  </h2>
+                  <div id="assess" class="accordion-collapse fs-3 collapse" aria-labelledby="headAssess" data-bs-parent="#accordionServices">
+                    <div class="accordion-body text-dark fs-5">
+                      <p>To fully appreciate the benefits of an Urban Greening Plan, ARGANS quantifies the socio-economic benefits derived from planting programs in a given area in units policy makers understand: reduction in premature deaths and hospitalizations for respiratory and cardiovascular illnesses and the related costs.</p>
+                      <p><em>This service costs from € 1,500 excluding tax.</em></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <figure>
+              <source media="(min-width:1280px)" srcset="img/gfx/output_00_2400x1550.png">
+              <source media="(max-width:800px)" srcset="img/gfx/output_00_768x495.jpg">
+              <img src="img/gfx/output_00_1024x659.jpg" class="figure-img fluid-img rounded mt-3 px-0 px-lg-3" width="100%" alt="individual trees seen from satellite">
+              <figcaption class="figure-caption text-dark text-center fs-4 my-3">Very High Resolution (VHR) satellite images allows individual trees to be detected and species identified, rendered here in different colours, providing an accurate inventory of urban flora and mitigation effect on air quality and carbon footprint.</figcaption>
+            </figure>
+          </section>
+        </article>
+        <aside class="d-flex flex-column col-12 p-3 align-items-center justify-content-between text-center" id="sidebar">
+          <section class="row" aria-labelledby="Air Quality">
+            <div class="col-12 col-md-6">
+              <div class="col d-flex justify-content-center">
+                <a class="text-decoration-none" href="#airQuality">
+                  <div class="card mb-3 text-dark mx-auto" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4 text-center my-auto">
+                        <picture>
+                          <source media="(min-width:768px)" class="img-fluid rounded-start" srcset="img/icon/air_icon.png">
+                          <img src="img/gfx/WHO_AirPollutionHealth.jpg" class="img-fluid w-100 rounded-start" alt="Green versus polluted city">
+                        </picture>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Air Quality &amp; Health</h5>
+                          <p class="card-text">Air pollution is attributed to 11.65% of deaths globally, attributable to 7 million premature deaths annually</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 text-start">
+              <p class="fs-4 text-light">Since 2000, the levels of airbourne pollutants in cities has risen significantly. According to a 2022 report, 99% of the world's population breathe air that exceeds the WHO air quality guidelines and contains high levels of pollutants.</p>
+            </div>
+          </section>
+          <section class="row" aria-labelledby="Urban Greening">
+            <div class="col-12 col-md-6">
+              <div class="col d-flex justify-content-center align-items-center">
+                <a class="text-decoration-none" href="#urbanGreening">
+                  <div class="card mb-3 text-dark mx-auto" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4 my-auto">
+                        <picture>
+                          <source media="(min-width:768px)" class="img-fluid rounded-start" srcset="img/icon/greenleaf.png">
+                          <img src="img/gfx/HipHopCaucus.jpg" class="img-fluid rounded-start" alt="Green versus polluted city">
+                        </picture>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Green Spaces</h5>
+                          <p class="card-text">The European Union commits to planting at least 3 billion additional trees in Europe by 2030.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 text-start">
+              <p class="fs-4 text-light">Urban reforestation, i.e., increasing the tree density in cities and peri-urban reforestation near densely populated cities, is a strategy to mitigate the air pollution and climate change effects, enhance biodiversity, and provide recreational areas.</p>
+            </div>
+          </section>
+        </aside>
+        <div class="row text-dark text-center text-sm-start px-3 p-md-5 mt-5" id="airQuality">
+          <article class="col-12">
+            <section class="row align-items-start g-5">
+              <div class="col-lg-6">
+                <p class="display-6 text-center mb-5">99% of the global population are breathing poor-quality air</p>
+                <p>According to a 2022 World Health Organisation report almost the entire global population breathe air that exceeds WHO guideline limits and contains high levels of pollutants. Since 2000, the levels of these pollutants in cities has risen significantly.</p>
+                <p>More than half of the world's population lives in cities and many of these cities share the problem of poor air quality. By 2050, 70% of the world's population will reside in urban areas, and outdoor air pollution will lead to about 6.6 million premature deaths and widespread loss of healthy years of life. Air pollution is the leading environmental health risk factor globally. The pollutants of major public health concern include fine particulate matter, nitrogen dioxide, ozone, carbon monoxide, and sulphur dioxide. </p>
+                <p class="lead my-3">Death and ill health attributable to air pollution is now estimated to be on a par with other major global health risks. Lowering air pollution levels can reduce the incidence of disease from stroke, heart disease, lung cancer, and both chronic and acute respiratory diseases. [WHO 2021]</p>
+                <p class="mb-3">Air quality is closely linked to the earth's climate and ecosystems globally. Many of the drivers of air pollution (i.e. combustion of fossil fuels) are also sources of greenhouse gas emissions. Reducing air pollution levels can contribute to the near- and long-term mitigation of climate change.</p>
+              </div>
+              <div class="col-lg-6">
+                <h1 class="text-center mb-3">Policies for a cleaner urban environment</h1>
+                <p>In 2015, the World Health Assembly adopted a landmark resolution on air quality, recognising it as one of the leading avoidable cause of death and ill health. Member states pledged to tackle the problem.</p>
+                <p>The European Environment Agency 2021 Zero Action Plan sets the target to reduce the number of premature deaths due to exposure to fine particulate matter by 55% by 2030, as compared to 2005. [EEP 2021]</p>
+                <p>The European regulations for air quality (e.g., Air Quality Directive 2008/50/EC) and other environmental policies (e.g., EU Biodiversity Strategy 2030; EU Pollinators Initiative) commit territories and cities of at least 20,000 inhabitants to publish their Carbon Footprint every three years, a Territorial Climate Air and Energy Plan every five years and to develop an Urban Greening Plan.</p>
+                <picture>
+                  <img src="img/gfx/BenefitsUrbanFlora.png" class="img-fluid rounded mt-3" alt="Benefits of Urban Flora">
+                  <figcaption class="figure-caption text-light text-center fs-6 py-3">Urban planting and re-naturing or 'greening' public spaces has a major role in reducing air pollution and improving air quality, mitigating climate change effects, enhancing biodiversity, and promoting 'wellness' by providing recreational areas and fostering social cohesion.</figcaption>
+                </picture>
+              </div>
+            </section>
+          </article>
+        </div>
+        <div class="row text-dark text-center text-sm-start px-3 m-0 p-md-5 mt-3" id="urbanGreening">
+          <article class="col-12">
+            <section class="row align-items-end g-5">
+              <div class="col-xl-7">
+                <h1 class="mb-3 text-start">Greener Cities, Cleaner Air</h1>
+                <p>Urban reforestation, i.e., increasing the tree density in cities and peri-urban reforestation near densely populated cities, is a strategy to mitigate the air pollution and climate change effects, enhance biodiversity, and provide recreational areas.</p>
+                <p>Planting trees can help improve air quality and meet clean air standards in cities. Trees have a remarkable range of traits that can help reduce urban air pollution, and cities around the world are looking to develop planting strategies to harness the benefits of public green spaces.</p>
+                <blockquote class="blockquote text-center my-5">
+                  <p class="mt=3 fs-3">Our promise to plant 3 billion additional trees is all about planting the right trees, in the right place, for the right purpose.</p>
+                  <footer class="blockquote-footer fs-5">Virginijus Sinevičius, <cite title="European Commission">European Commission</cite></footer>
+                </blockquote>
+                <p>To set up ambitious greening plans adapted to actual needs, city planners need a suitable selection of plant species and a realistic tree inventory (public and private) to properly assess the role of urban green spaces in mitigating air pollution and climate change effects in and around the cities.</p>
+                <p class="lead">Urban planting and re-naturing or 'greening' public spaces has a major role in reducing air pollution and improving air quality, mitigating climate change effects, enhancing biodiversity, and promoting 'wellness' by providing recreational areas and fostering social cohesion.</p>
+              </div>
+              <div class="col-xl-5 p-0">
+                <div class="accordion accordian-flush rounded m-3" id="accordionBenefits">
+                  <div class="accordion-item bg-transparent ">
+                    <h2 class="accordion-header" id="headImproveAir">
+                      <button class="accordion-button fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#improveAir" aria-expanded="true" aria-controls="improveAir">
+                        Improve Air Quality
+                      </button>
+                    </h2>
+                    <div id="improveAir" class="accordion-collapse collapse show" aria-labelledby="headImproveAir" data-bs-parent="#accordionBenefits">
+                      <div class="accordion-body text-dark fs-5">
+                        <p>Trees absorb atmospheric pollutants, like sulphur dioxide and nitrogen dioxide, through their leaves and filter fine particulates by deposition on foliage, from where rain washes it into the drain. Absorbing carbon dioxide and releasing oxygen during the day green plants also enhance air quality.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent ">
+                    <h2 class="accordion-header" id="headReduceHeat">
+                      <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#reduceHeat" aria-expanded="false" aria-controls="reduceHeat">
+                        Reduce Urban Heat
+                      </button>
+                    </h2>
+                    <div id="reduceHeat" class="accordion-collapse collapse" aria-labelledby="headImproveAir" data-bs-parent="#accordionBenefits">
+                      <div class="accordion-body text-dark fs-5">
+                        <p>Trees provide a cooling effect through creating shady spots but also by the process by which energy from the sun evaporates water that has been transpired from roots to leaves. This reduces the solar energy available for warming the air.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent ">
+                    <h2 class="accordion-header" id="headBiodiversity">
+                      <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#biodiversity" aria-expanded="false" aria-controls="biodiversity">
+                        Protect Biodiverity
+                      </button>
+                    </h2>
+                    <div id="biodiversity" class="accordion-collapse collapse" aria-labelledby="headBiodiversity" data-bs-parent="#accordionBenefits">
+                      <div class="accordion-body text-dark fs-5">
+                        <p>Urban re-forestation and renaturing provides havens for wildlife, protecting biodiversity. Green channels can link and help maintain habitats supporting and preserving threatened species and ecosystems.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent ">
+                    <h2 class="accordion-header" id="headWellbeing">
+                      <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#wellbeing" aria-expanded="false" aria-controls="wellbeing">
+                        Promote Wellbeing
+                      </button>
+                    </h2>
+                    <div id="wellbeing" class="accordion-collapse collapse" aria-labelledby="headWellbeing" data-bs-parent="#accordionBenefits">
+                      <div class="accordion-body text-dark fs-5">
+                        <p>Outdoor activities and social interactions are essential to human health, development and wellbeing. Public green spaces satisfy a vital role in creating safe and healthy areas of enhanced natural beauty for leisure and social activities.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent ">
+                    <h2 class="accordion-header" id="headResilience">
+                      <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resilience" aria-expanded="false" aria-controls="resilience">
+                        Climate Resilience
+                      </button>
+                    </h2>
+                    <div id="resilience" class="accordion-collapse collapse" aria-labelledby="headResilience" data-bs-parent="#accordionBenefits">
+                      <div class="accordion-body text-dark fs-5">
+                        <p>Trees have a direct mitigating effect by sequestering carbon dioxide from the atmosphere and offset an urban carbon footprint. By maintaining soil stability and reducing sediment run-off trees help reduce the risk of erosion and, by replacing asphalt and concrete, increase permeability to ameliorate flooding.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+          <article class="col-12 mt-5">
+            <section class="row align-items-end g-5">
+              <div class="col-lg-6">
+                <h1>Impact Assessment</h1>
+                <p class="lead">Not every tree species is suitable for urban planting. Air pollution removal by trees strongly depends on the location, tree species, and structural characteristics of individual trees, such as tree height, leaf area index, and crown diameter.</p>
+                <p>To date, urban trees' air pollution removal capacity have been investigated in a few cities through municipal tree inventories,  mainly based on field observations and mapped in Geographical Information Systems. Some, like the  i-Tree ECO model (US Department of Agriculture), include cloud sourcing components and air quality metrics but usually these inventories include only trees managed by the municipality, which can represent as low as 20-30% of the total number of urban trees.</p>
+                <p>The main limiting factor for studying individual trees is the high cost and spatial resolution of techniques, such as aerial photography and airborne laser scanning.</p>
+              </div>
+              <div class="col-lg-6">
+                <p>Mistakes have been made, some municipalities have hurriedly planted wrong tree species, and these planting strategies have degraded air quality and increased asthma exacerbation. For example, Aspen and poplar are members of a tree genus that emits high levels of isoprene, that reacts with sunlight and NOx to produce ozone. </p>
+                <div class="col d-flex justify-content-center align-items-center px-3">
+                  <div class="card text-dark" style="max-width: 800px;">
+                    <div class="row g-0">
+                      <div class="col-xl-4 text-center m-auto">
+                        <img src="img/gfx/Isoprene.svg" class="img-fluid rounded-start" alt="Isoprene Molecule">
+                      </div>
+                      <div class="col-xl-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Isoprene</h5>
+                          <p class="card-text">Isoprene is ubiquitous. It is the building block of terpenes and these Volatile Organic Compound (VOC) poses both a primary health risk and indirectly through photochemical reactions producing ozone and PM25 particulates, elements of smog.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-3">Harnessing urban green spaces efficiently is "...all about planting the <em>right</em> trees, in the <em>right</em> place, for the <em>right</em> purpose". ARGANS can support you make the <em>right</em> choices when planning urban planting schemes.</p>
+              </div>
+            </section>
+          </article>
+        </div>
+        <div class="row text-light text-center text-sm-start px-3 m-0 p-md-5 g-5" id="services">
+          <article class="col-12">
+            <div class="text-center">
+              <p class="display-6">Uniquely, compared to competitors, our process offers an end-to-end management solution to support municipal planting strategies according to "best practices" recommendations.</p>
+            </div>
+            <section class="row align-items-start mt-5 g-5">
+              <div class="col-12 col-lg-5 p-0">
+                <div class="accordion accordian-flush rounded" id="accordionAdvantages">
+                  <div class="accordion-item bg-transparent">
+                    <h2 class="accordion-header" id="headGreeningPlan">
+                      <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#greeningPlan" aria-expanded="true" aria-controls="greeningPlan">
+                        ARGANS can assist in developing a suitable, fit-for-purpose, sustainable urban re-naturing and re-forestation plan to reach air quality standards...
+                      </button>
+                    </h2>
+                    <div id="greeningPlan" class="accordion-collapse collapse show" aria-labelledby="headGreeningPlan" data-bs-parent="#accordionAdvantages">
+                      <div class="accordion-body text-dark fs-6">
+                        <p>This is the aim of ARGANS Green City, to provide authorities with expert recommendations in selecting suitable tree species, mapping available open areas for planting, maintaining a complete inventory of individual trees, and providing accurate metrics to measure the benefits of cleaner air and increased shade.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent ">
+                    <h2 class="accordion-header" id="headAccuracy">
+                      <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accuracy" aria-expanded="false" aria-controls="accuracy">
+                        ... by providing a full and accurate inventory of public and private trees within an area of interest ...
+                      </button>
+                    </h2>
+                    <div id="accuracy" class="accordion-collapse collapse" aria-labelledby="headAccuracy" data-bs-parent="#accordionAdvantages">
+                      <div class="accordion-body text-dark fs-6">
+                        <p>We use very high spatial resolution satellite imagery to detect individual trees within the chosen city limits, both public and privately owned (which can be up to 80% of the total). We provide precise data on the location, species and structural characteristics of trees in the inventory.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent ">
+                    <h2 class="accordion-header" id="headSurvey">
+                      <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#survey" aria-expanded="false" aria-controls="survey">
+                        ... at a fraction of the cost and time of surveying a using traditional means ...
+                      </button>
+                    </h2>
+                    <div id="survey" class="accordion-collapse collapse" aria-labelledby="headSurvey" data-bs-parent="#accordionAdvantages">
+                      <div class="accordion-body text-dark fs-6">
+                        <p>Surveying 5,000 public tree per km2 will take around 1000 hours of field investigation, more than 0.5 person hours per year per km2. Using ARGANS will reduce manual labour by at least 50%, with a saving due to using the service of 30k€ per year.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent ">
+                    <h2 class="accordion-header" id="headFootprint">
+                      <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#footprint" aria-expanded="false" aria-controls="footprint">
+                        ... to quantify the impact of the trees and vegetation on the urban carbon footprint ...
+                      </button>
+                    </h2>
+                    <div id="footprint" class="accordion-collapse collapse" aria-labelledby="headFootprint" data-bs-parent="#accordionAdvantages">
+                      <div class="accordion-body text-dark fs-6">
+                        <p>City authorities use an inventory of public trees to report their carbon footprint, along with the estimate of residential and industrial carbon. This underestimates tree numbers by up to 80%. We provide precise calculation of the carbon footprint and GHG sequestration by urban trees.</p>
+                        <p>Total savings due to the service would be in the region of 50-60k€ every three years.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent ">
+                    <h2 class="accordion-header" id="headMitigation">
+                      <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mitigation" aria-expanded="false" aria-controls="mitigation">
+                        ... and provide accurate assessment of the mitigating effect on air quality due to the effect of urban trees.
+                      </button>
+                    </h2>
+                    <div id="mitigation" class="accordion-collapse collapse" aria-labelledby="headMitigation" data-bs-parent="#accordionAdvantages">
+                      <div class="accordion-body text-dark fs-6">
+                        <p>Some public authorities are developing methodologies but seldom account for air quality. With a full tree inventory, including number, species and individual characteristics, we are able to provide precise and accurate estimates of the environmental effects of planting.</p>
+                        <p>Total saving due to the service in the order of 100k€ every five years.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-7 text-dark">
+                <p class="lead">Our innovative range of services have been developed over more than a decade working to support European air quality regulations and have been deployed and validated across Europe including: Aix-en-Provence (France), Florence and Milan (Italy), Valencia (Spain), and Kaunas (Lithuania).</p>
+                <h1>Case Studies</h1>
+                <p>In 2019, 29 and 69 premature deaths and 189 and 416 hospital admissions could have been "avoided" by respecting the World Health Organization annual limit values in Aix and Florence, respectively.</p>
+                <p>This was the sobering conclusion of an ARGANS Case Study of two European cities. On the other hand, by selecting efficient plant species and developing an ambitious urban greening strategy,  ARGANS could provide a detailed estimate of improvements to meet the city's air quality standards.</p>
+                <p>For instance, each newly reforested area (based on 400 trees) will remove annually at least 3.0 tons of O3, 2.5t NO2, 1.5t PM10, 0.8t PM2.5, 10t CO2, and lead to an ambient air two °C cooler compared to the surrounding area and increased carbon stocks (2t per ha).</p>
+                <p>With the above air pollution reduction, two premature deaths and ten hospital admissions for respiratory and cardiovascular diseases could be "avoided" annually. Each newly reforested area could prevent damages valued at €173,000 per year due to the quantity of O3, NO2, PM and CO2 removed. The newly reforested area can also markedly improve citizens' quality of life by providing a space to meet others, play sports and participate in an active, healthy lifestyle.</p>
+              </div>
+            </section>
+            <section class="container-fluid mt-5">
+              <div id="imageGallery" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <picture>
+                      <source media="(min-width:1280px)" srcset="img/gfx/output_02_900x640.png">
+                      <source media="(max-width:800px)" srcset="img/gfx/output_02_450x320.jpg">
+                      <img class="d-block w-100" src="img/gfx/output_02_900x640.jpg" alt="Aix-en-Provence, France"/>
+                      <figcaption class="figure-caption text-dark text-center fs-6 my-3">Aix-en-Provence, France</figcaption>
+                    </picture>
+                  </div>
+                  <div class="carousel-item">
+                    <picture>
+                      <source media="(min-width:1280px)" srcset="img/gfx/output_01_900x640.png">
+                      <source media="(max-width:800px)" srcset="img/gfx/output_01_450x320.jpg">
+                      <img class="d-block w-100" src="img/gfx/output_01_900x640.jpg" alt="Aix-en-Provence, France"/>
+                      <figcaption class="figure-caption text-dark text-center fs-6 my-3">Aix-en-Provence, Stade Georges Carcassonne</figcaption>
+                    </picture>
+                  </div>
+                  <div class="carousel-item">
+                    <picture>
+                      <source media="(min-width:1280px)" srcset="img/gfx/output_03_900x640.png">
+                      <source media="(max-width:800px)" srcset="img/gfx/output_03_450x320.jpg">
+                      <img class="d-block w-100" src="img/gfx/output_03_900x640.jpg" alt="Aix-en-Provence, tree identification"/>
+                      <figcaption class="figure-caption text-dark text-center fs-6 my-3">Aix-en-Provence, tree identification</figcaption>
+                    </picture>
+                  </div>
+                  <div class="carousel-item">
+                    <picture>
+                      <source media="(min-width:1280px)" srcset="img/gfx/output_04_900x640.png">
+                      <source media="(max-width:800px)" srcset="img/gfx/output_04_450x320.jpg">
+                      <img class="d-block w-100" src="img/gfx/output_04_900x640.jpg" alt="Florence, Atletica Firenze Marathon"/>
+                      <figcaption class="figure-caption text-dark text-center fs-6 my-3">Florence, Atletica Firenze Marathon</figcaption>
+                    </picture>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageGallery" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageGallery" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </section>
+            <section class="row mt-5" aria-labelledby="AboutUs">
+              <div class="col-12 col-md-6">
+                <h1 class="mt-xxl-5">About Us</h1>
+                <p class="lead mb-3 text-dark">ARGANS Limited, is a fast-growing UK SME that has a reputation for excellence in delivering Earth Observation satellite remote sensing applications and services, innovative solutions in data analytics, Geographical Information Systems and the use of remote sensing data to support satellite derived bathymetry, coastal charting and mapping, climate change monitoring, environmental information, and geospatial intelligence.</p>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="col d-flex align-items-center">
+                  <div class="card mb-3 text-dark mx-auto" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Dr Pierre Sicard</h5>
+                          <p class="card-text"><small class="text-dark">Co-ordinator & Lead Scientist</small></p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center my-auto">
+                        <img src="img/gfx/PierreSicard.jpg" class="img-fluid rounded-start" alt="Photo of Pierre Sicard">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-dark">Dr Sicard, is an expert on the impact assessment of air pollution and climate change on vegetation and urban forestry, with over 80 peer-reviewed publications. He is Deputy Coordinator of the RG 8.04.00 "Air Pollution & Climate Change" under the International Union of Forest Research Organizations (IUFRO), involved as UNECE Expert Panel on Clean Air in Cities and active in the EU Clean Air Forum.</p>
+              </div>
+              <div class="jumbotron jumbotron-fluid">
+                <div class="container text-center">
+                  <h1>Contact Us</h1>
+                  <p class="text-dark">Request a consultation to discuss how ARGANS might assist with your municipal greening strategy.</p>
+                  <div class="text-center py-3">
+                    <a class="btn btn-primary btn-lg" onclick="decode('cHNpY2FyZEBhcmdhbnMuZXUK')" role="button" id="cta">Email Green City</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container-fluid text-light bg-dark p-5">
+      <div class="row justify-content-between">
+        <div class="col-md-12 col-lg-5">
+          <p class="mb-3 text-center">ARGANS, a member of the ACRI Group, is based in Plymouth, UK with offices in Sophia-Antipolis and Toulouse, France.</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <img src="img/logo/UrbanReforestation.png" class="img-fluid" alt="Urban Re-forestation from Space logo">
+              </div>
+              <div class="col-6">
+                <a href="https://argans.co.uk"><img class="img-fluid" src="img/logo/ARGANS2022_logo.svg" alt="ARGANS company logo"/></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 offset-lg-1 text-center text-md-start">
+          <h1 class="mb-3">Contact</h1>
+          <div class="mb-5">
+            <p><i class="fa fa-home me-3"></i>Plymouth, United Kingdom</p>
+            <p><i class="fa fa-envelope me-3"></i><a class="text-decoration-none text-reset" href="mailto:enquiries@argans.co.uk">enquiries@argans.co.uk</a></p>
+            <p><i class="fa fa-phone me-3"></i><a class="text-decoration-none text-reset" href="tel:+441751764298">+44( 0)1751 764 298</a></p>
+            <p><i class="fa fa-home me-3 mt-3"></i>Sophia-Antipolis, France</p>
+            <p><i class="fa fa-envelope me-3"></i><a class="text-decoration-none text-reset" href="mailto://information@argans.eu">information@argans.eu</a></p>
+            <p><i class="fa fa-phone me-3"></i><a class="text-decoration-none text-reset" href="tel:+33492967500">+33 (0)4 92 96 75 00</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 text-center">
+          <h1 class="mb-3">Follow</h1>
+          <div class="d-flex justify-content-center" id="social-media">
+            <a class="btn btn-primary me-3" href="https://linkedin.com/company/419849?trk=prof-exp-company-name" role="button"><i class="fa fa-linkedin"></i></a>
+            <a class="btn btn-primary" href="https://twitter.com/ARGANS_Ltd" role="button"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-primary ms-3" href="https://facebook.com/Argans-Ltd-398626617605986/" role="button"><i class="fa fa-facebook"></i></a>
+          </div>
+          <div class="mt-5 mb-3">
+            <p>ARGANS is an ISO9001 certified company</p>
+            <img class="img-fluid" src="img/logo/arg-ISO9001.png" width="50%" alt="ISO9001:2015 badge" />
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-12 col-lg-6 text-center text-lg-end">
+          <p>&copy;&nbsp;2022&nbsp;&nbsp;ARGANS&nbsp;Limited&nbsp;&nbsp;6313966</p>
+        </div>
+        <div class="col-md-12 col-lg-6 text-center text-lg-start">
+          <span id="accordian">
+            <a class="text-decoration-none text-reset" href="#privacy" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="privacy">Privacy Policy</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class="text-decoration-none text-reset" href="#disclaimer" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="disclaimer">Disclaimer</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class="text-decoration-none text-reset" href="#copyright" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="copyright">Copyright</a>
+          </span>
+        </div>
+        <div id="accordian-group">
+          <div class="collapse col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3 mt-5" id="privacy" data-bs-parent="#accordian-group">
+            <h3 class="mb-3">Privacy Policy</h3>
+            <p class="mt-2">This privacy policy ("policy") will help you understand how ARGANS Limited ("us","we","our") uses and protects the data you provide to us when you visit and use the marineplastics.argans.co.uk website.</p>
+            <p>We reserve the right to change this policy at any given time. If you want to make sure that you are up to date with the latest changes, we advice you to frequently visit this page.</p>
+            <h5 class="mt-2">What User Data We Collect</h5>
+            <p>When you visit this website, we collect a data profile regarding your online behaviour on our website. This may include your IP address, user-agent string, browser type, operating system, referral URLs, device information (e.g., device IDs), device settings, mobile carrier name, pages visited, links clicked, the requested URL, and search terms.</p>
+            <p>This data is automatically logged, it satisfies a legitimate interest pursued by the controller, ARGANS, [GDPR Article 6(1)f] to comply with standard security practices, protecting our legal rights and interests, and enforcing our rules and policies.</p>
+            <h5 class="mt-2">Our Cookie Policy</h5>
+            <p>This website also uses Google Analytics, a web analytics service provided by Google, Inc. ("Google"). Google Analytics uses Cookies. A Google Analytics tracking cookie is attached to this webpage. The standard tracking cookie collects your IP address, which is considered by GDPR as personal information. However, on this site your IP address is anonymised before being sent to Google Analytics for processing, hence GDPR is satisfied and cookie consent is not needed.</p>
+            <p>Please note that cookies don't allow us to gain control of your computer in any way. They are strictly used to monitor visits to the website.</p>
+            <p>If you want to disable cookies, you can do so by accessing the settings of your internet browser.</p>
+            <h5 class="mt-2">Links to Other Websites</h5>
+            <p>Our website contains links that lead to other websites, including social media sites from Facebook, Twitter and LinkedIn. If you click on these links ARGANS is not held responsible for your data and privacy protection. Visiting these websites is not governed by this privacy policy.</p>
+            <h5 class="mt-2">Data Security &amp; Retention</h5>
+            <p>ARGANS is committed to data security and has done all in its power to prevent data theft, unauthorized access, and disclosure by implementing technologies and software, which help us safegaurd all data we collect.</p>
+            <p>Logged data is retained for a month and subsequently over-written.</p>
+            <p>By visiting our website, you declare your consent to the above provisions.</p>
+            <p class="close text-end"><a href="#privacy" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="privacy"><i class="fa fa-chevron-circle-up"></i><span class="label">&nbsp;close</span></a></p>
+          </div>
+          <div class="collapse col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3 mt-5" id="disclaimer" data-bs-parent="#accordian-group">
+            <h3 class="mb-3">Disclaimer</h3>
+            <p class="mt-2">The information contained in this website is for general information purposes only. The information is provided by ARGANS and while we endeavour to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.</p>
+            <p>In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.</p>
+            <p>ARGANS does not guarantee that this website will be secure or free from bugs and viruses. You are responsible for configuring your information technology, computer programmes and platform to access our site. You should use your own virus protection software. You must not misuse our website by knowingly introducing viruses, trojans, worms, logic bombs or other material that is malicious or technologically harmful. You must not attempt to gain unauthorised access to our website, the server on which our website is stored or any server, computer or database connected to our website. You must not attack our website via a denial-of-service attack or a distributed denial-of service attack. By breaching this provision, you would commit a criminal offence under the Computer Misuse Act 1990. We will report any such breach to the relevant law enforcement authorities and we will co-operate with those authorities by disclosing your identity to them. In the event of such a breach, your right to use our website will cease immediately.</p>
+            <p>Through this website you are able to link to other websites which are not under the control of ARGANS. We have no control over the nature, content and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.</p>
+            <p>You may link to any page(s) of this website, provided you do so in a way that is fair and legal and does not damage our reputation or take advantage of it. You must not establish a link in such a way as to suggest any form of association, approval or endorsement on our part where none exists. we reserve the right to withdraw linking permission without notice.</p>
+            <p>Every effort is made to keep the website up and running smoothly. However, ARGANS takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control.</p>
+            <p>Your use of this website and any dispute arising out of such use of the website is subject to the laws of England, Northern Ireland, Scotland and Wales. Unauthorised use of this website may give rise to a claim for damages and/or be a criminal offence.</p>
+            <p class="close text-end"><a href="#disclaimer" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="disclaimer"><i class="fa fa-chevron-circle-up"></i><span class="label">&nbsp;close</span></a></p>
+          </div>
+          <div class="collapse col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3 mt-5" id="copyright" data-bs-parent="#accordian-group">
+            <h3 class="mb-3">Copyright Statement</h3>
+            <p class="mt-2">This website and its contents is copyright of ARGANS Limited - &copy;&nbsp;ARGANS&nbsp;2022. All rights reserved</p>
+            <p>You are permitted to view, copy, and print any page(s) from this website subject to your agreement that:</p>
+            <ul>
+              <li>You will not modify the content or graphics in any form or manner</li>
+              <li>You will not copy or distribute graphics separately from their accompanying text and you will not quote materials out of their context</li>
+              <li>Your use of the material is for your own personal information, and for non-commercial purposes only</li>
+              <li>Any copies of the material made for a permitted purpose will include an acknowledgement that copyright belongs to ARGANS Limited</li>
+              <li>You are not permitted to copy the design elements, look and feel, or layout of this website</li>
+            </ul>
+            <p>You may not, except with our express written permission, distribute or commercially exploit the content. Nor may you transmit it or store it in any other website or other form of electronic retrieval system.</p>
+            <p>All trade marks and logos reproduced in this website which are not the property of, or licensed to, the operator are acknowledged on the website.</p>
+            <h5 class="mt-2">Fair Use Disclaimer</h2>
+            <p>While every effort has been made to acknowledge is this website uses another person's copyrighted work we acknowledge that unattributed elements are used, that were considered free-to-use under creative commons licensing, may be copyrighted. In such cases all rights and credit go directly to the rightful owners. No copyright infringement was intended.</p>
+            <p>Contact <a href="mailto://webmaster@argans.co.uk">webmaster@argans.co.uk</a> to if you own copyright on an image included on the Site and would like it removed.</p>
+            <p class="close text-end"><a href="#copyright" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="copyright"><i class="fa fa-chevron-circle-up"></i><span class="label">&nbsp;close</span></a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
