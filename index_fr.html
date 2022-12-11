@@ -17,7 +17,7 @@
     </title>
     <meta name="author" content="Stephen Emsley" />
     <meta name="copyright" content="&copy; 2022 ARGANS Limited" />
-    <meta name="language" content="french" />
+    <meta name="language" content="english" />
     <meta name="keywords" content="green city,re-forestation,air quality,urban flora,green spaces,municipal planting,air pollution,greening,VOC,isoprene,remote sensing,earth observation,ARGANS" />
     <meta name="description" content="ARGANS use Very High Resolution satellite images to identify individual trees by species paving the way to a managed urban planting strategy to combat urban air pollution." />
     <link rel="icon" type="image/png" href="img/logo/favicon.png" />
@@ -47,494 +47,212 @@
     <meta property="twitter:image" content="https://greencity.argans.eu/img/gfx/output_00_1024x659.jpg" />
     <meta name="twitter:site" content="@ARGANS_Ltd" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@500&display=swap" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body data-bs-spy="scroll" data-bs-target="#top-navbar" data-bs-offset="0">
-    <header class="sticky-top">
-      <nav class="navbar navbar-expand-xl navbar-dark bg-dark" id="top-navbar">
-        <button class="navbar-toggler mx-2" id="nav_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="navbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title text-light" id="navbarLabel">ARGANS Green City</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="bg-light d-none d-lg-block py-3">
+      <div class="container-fluid">
+        <div class="row topbar">
+          <div class="col-2 align-items-center">
+            <a href="https://argans.co.uk"><img src="img/logo/argans_logo.svg" width="200vw" alt="ARGANS logo" /></a>
           </div>
-          <div class="offcanvas-body text-center">
-            <div class="navbar-brand mb-5 mb-xl-1 ms-xl-5">
-              <a href="https://argans.co.uk"><img src="img/logo/ARGANS2022_logo.svg" width="150vw" alt="ARGANS logo" /></a>
-            </div>
-            <ul class="fs-5 fw-bold navbar-nav justify-content-end flex-grow-1 pe-3 mt-3">
-              <li class="nav-item mx-1"><a class="nav-link active" href="#top">Accueil</a></li>
-              <li class="nav-item mx-1"><a class="nav-link" href="#airQuality">Qualité de l'air</a></li>
-              <li class="nav-item mx-1"><a class="nav-link" href="#urbanGreening">Espaces verts</a></li>
-              <li class="nav-item mx-1"><a class="nav-link" href="#services">Services</a></li>
-              <li class="nav-item mx-1"><a class="nav-link" href="#">Map Viewer</a></li>
-            </ul>
-            <div class="pe-xl-5 mt-5 mt-xl-0">
-              <select class="selectpicker" data-width="fit" id="language">
-                <option data-content='FR'>Français&nbsp;</option>
-                <option data-content='ER'>English&nbsp; </option>
-              </select>
-            </div>
+          <div class="col-2">
+            <img src="img/logo/AirTree Logo.png" class="d-block w-100" alt="Green City logo">
+          </div>
+          <div class="col-4 text-center">
+            <p class="display-5">Green City</p>
+          </div>
+          <div class="col-4 text-end">
+            <select class="selectpicker" data-width="fit" id="language">
+              <option data-content='FR'>Français&nbsp;</option>
+              <option data-content='ER'>English&nbsp; </option>
+            </select>
           </div>
         </div>
+      </div>
+    </div>
+    <header class="sticky-top">
+      <nav class="navbar nav-pills nav-justified p-3 bg-light">
+        <a class="nav-item nav-link active" href="#top">Accueil</a>
+        <a class="nav-item nav-link" href="#challenges">Défis urbains</a>
+        <a class="nav-item nav-link" href="#greening">Verdissement des villes</a>
+        <a class="nav-item nav-link" href="#services">Nos Services</a>
+        <a class="nav-item nav-link" href="#clients">Nos Clients</a>
+        <a class="nav-item nav-link" href="#contact">Contact</a>
       </nav>
     </header>
-
-    <main class="container-fluid text-light p-2 p-lg-5" role="main">
+    <div class="hero" id="#top">
+        <div>
+          <img src="img/gfx/hero01.jpg">
+        </div>
+        <div>
+          <img class="d-block w-100" src="img/gfx/hero02.jpg">
+          <img class="d-block w-100" src="img/gfx/hero03.jpg">
+        </div>
+      </div>
+    <main class="container text-dark p-2 p-lg-5" role="main">
       <div class="row">
-        <article class="col-12 col-xxl-9 px-3">
-          <section class="row px-3" id="top">
-            <div class="d-flex flex-column col mt-0 px-3 align-items-center justify-content-between">
-              <img src="img/logo/GreenCityLogo_640x640.svg" class="d-block w-100" alt="Green City logo">
-              <p class="display-5 text-center">Un service innovant en faveur de l'air pur urbain</p>
-              <div class="d-flex mt-5">
-                <div class="card-group" id="iconbox">
-                  <div class="card bg-transparent p-3">
-                    <img src="img/icon/clean_air_icon.png" class="card-img-top" alt="clean air icon">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Améliorer la qualité de l'air</h5>
-                    </div>
-                  </div>
-                  <div class="card bg-transparent p-3">
-                    <img src="img/icon/bee_icon.png" class="card-img-top" alt="enhance biodiversity icon">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Renforcer la biodiversité</h5>
-                    </div>
-                  </div>
-                  <div class="card bg-transparent p-3">
-                    <img src="img/icon/resilience_icon.png" class="card-img-top" alt="climate resilience icon">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Résilience climatique</h5>
-                    </div>
+        <section class="row mt-5" id="challenges" aria-labelledby="City Challenges">
+          <div class="col">
+            <h1 class="mb-5">Défis urbains</h1>
+            <div class="row g-5">
+              <div class="col-md-6">
+                <div class="card text-dark mx-auto">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Qualité de l'air et santé</h5>
+                    <p class="card-text">La pollution atmosphérique est à l'origine de 11,65 % des décès dans le monde, soit 7 millions de décès prématurés par an.</p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-6">
-              <p class="display-6 text-center mb-5">
-                Nos services offrent une solution unique de gestion de bout en bout pour soutenir les stratégies municipales en matière d'espaces verts.
-              </p>
-              <div class="accordion accordian-flush rounded mb-5" id="accordionServices">
-                <div class="accordion-item bg-transparent">
-                  <h2 class="accordion-header" id="headInventory">
-                    <button class="accordion-button fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#inventory" aria-expanded="true" aria-controls="inventory">
-                      Inventaire des espaces verts de la ville établi par satellite
-                    </button>
-                  </h2>
-                  <div id="inventory" class="accordion-collapse collapse show" aria-labelledby="headInventory" data-bs-parent="#accordionServices">
-                    <div class="accordion-body text-light fs-5">
-                      <p>ARGANS acquiert des images satellites commerciales à très haute résolution (VHR), dont la résolution spatiale est inférieure à 50 cm, ce qui nous permet de détecter et d'identifier les arbres urbains individuels et de les classer en fonction de leur espèce, de leur hauteur, du diamètre de leur couronne, etc.</p>
-                      <p>La télédétection par satellite nous permet de le faire pour l'ensemble de la ville, et de préparer une carte précise des espaces verts de la ville et un inventaire détaillé des arbres, arbustes et gazons individuels publics et privés.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item bg-transparent ">
-                  <h2 class="accordion-header" id="headQuantify">
-                    <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#quantify" aria-expanded="false" aria-controls="quantify">
-                      Quantifier l'effet des espaces verts sur la qualité de l'air
-                    </button>
-                  </h2>
-                  <div id="quantify" class="accordion-collapse collapse" aria-labelledby="headQuantify" data-bs-parent="#accordionServices">
-                    <div class="accordion-body text-light fs-5">
-                      <p>La connaissance des espèces et des caractéristiques de la verdure urbaine nous permet d'estimer les avantages environnementaux du patrimoine arboré urbain en unités mesurables à l'échelle de la ville entière.</p>
-                      <p>Nous fournissons des estimations quantifiées du stockage du carbone, de la séquestration du dioxyde de carbone et de la capacité d'élimination des polluants atmosphériques en unités de tonnes de dioxyde d'azote, d'ozone et de particules par an.</p>
-                      <p>Pour quantifier les avantages, nous fournissons des graphiques des îlots de chaleur urbains pour l'ensemble de la ville et une estimation du confort thermique (indice universel de confort thermique).</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item bg-transparent ">
-                  <h2 class="accordion-header" id="headRecommend">
-                    <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#recommend" aria-expanded="false" aria-controls="recommend">
-                      Recommandations pour les plans d'assainissement de l'air et d'écologisation
-                    </button>
-                  </h2>
-                  <div id="recommend" class="accordion-collapse collapse" aria-labelledby="headRecommend" data-bs-parent="#accordionServices">
-                    <div class="accordion-body text-light fs-5">
-                      <p>ARGANS ne se contente pas de fournir la perspective du ciel. Notre personnel qualifié offre des services de conseil et des recommandations de "meilleures pratiques" pour les projets de reverdissement urbain.</p>
-                      <p>En fonction de votre territoire et des conditions environnementales, ARGANS fournit une liste d'espèces appropriées à planter pour un air plus sain dans la ville et les zones ouvertes disponibles. Chaque espèce d'arbre est évaluée pour sa résistance aux conditions locales (par exemple, la tolérance à la sécheresse, les parasites et les maladies), ses caractéristiques biologiques et sa capacité à absorber les polluants atmosphériques.</p>
-                      <p>Nous formons également les autorités à l'élaboration de plans de verdissement urbain et au suivi de leur exécution et de leur efficacité.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item bg-transparent ">
-                  <h2 class="accordion-header" id="headingAssess">
-                    <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#assess" aria-expanded="false" aria-controls="assess">
-                      Évaluation des avantages sanitaires et économiques
-                    </button>
-                  </h2>
-                  <div id="assess" class="accordion-collapse fs-3 collapse" aria-labelledby="headAssess" data-bs-parent="#accordionServices">
-                    <div class="accordion-body text-light fs-5">
-                      <p>Pour apprécier pleinement les avantages d'un plan de verdissement urbain, ARGANS quantifie les avantages socio-économiques découlant des programmes de plantation dans une zone donnée en unités compréhensibles par les décideurs politiques : réduction des décès prématurés et des hospitalisations pour des maladies respiratoires et cardiovasculaires et des coûts qui y sont liés.</p>
-                    </div>
-                  </div>
-                </div>
+              <div class="col-md-6">
+                <p>D'ici 2050, 70 % de la population mondiale résidera dans des zones urbaines, et la pollution de l'air extérieur entraînerait environ 6,6 millions de décès prématurés. À ce jour, des millions de personnes sont exposées à des concentrations supérieures aux valeurs limites de protection de la santé humaine pour les particules fines, le dioxyde d'azote et l'ozone troposphérique, avec une augmentation significative des niveaux dans les villes depuis les années 2000.</p>
               </div>
             </div>
-            <figure>
-              <source media="(min-width:1280px)" srcset="img/gfx/output_00_2400x1550.png">
-              <source media="(max-width:800px)" srcset="img/gfx/output_00_768x495.jpg">
-              <img src="img/gfx/output_00_1024x659.jpg" class="figure-img fluid-img rounded mt-3 px-0 px-lg-3" width="100%" alt="individual trees seen from satellite">
-              <figcaption class="figure-caption text-light text-center fs-4 my-3">Les images satellite à très haute résolution (THR) permettent de détecter les arbres individuels et d'identifier les espèces, restituées ici en différentes couleurs, fournissant un inventaire précis de la flore urbaine et de l'effet d'atténuation sur la qualité de l'air et l'empreinte carbone.</figcaption>
-            </figure>
-          </section>
-        </article>
-        <aside class="d-flex flex-column col-12 col-xxl-3 p-3 align-items-center justify-content-between text-center" id="sidebar">
-          <section class="row" aria-labelledby="Air Quality">
-            <div class="col-12 col-md-6 col-xxl-12">
-              <div class="col d-flex justify-content-start">
-                <a class="text-decoration-none" href="#airQuality">
-                  <div class="card mb-3 text-dark mx-auto" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4 text-center my-auto">
-                        <picture>
-                          <source media="(min-width:768px)" class="img-fluid rounded-start" srcset="img/icon/air_icon.png">
-                          <img src="img/gfx/WHO_AirPollutionHealth.jpg" class="img-fluid w-100 rounded-start" alt="Green versus polluted city">
-                        </picture>
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body text-center">
-                          <h5 class="card-title">Qualité de l'air et santé</h5>
-                          <p class="card-text">La pollution atmosphérique est à l'origine de 11,65 % des décès dans le monde, soit 7 millions de décès prématurés par an.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
+            <p>Les vagues de chaleur successives et les pics de pollution atmosphérique survenus depuis les années 2000, ainsi que la pandémie de COVID-19, ont permis une prise de conscience considérable des pouvoirs publics, et ont ouvert la porte à des stratégies de plantation (verdissement et re-naturation des villes) pour atténuer les effets de la pollution atmosphérique et du changement climatique, renforcer la biodiversité et offrir des espaces de loisirs. Dans le cadre du "Green Deal" européen, l'Union européenne s'engage à planter au moins 3 milliards d'arbres supplémentaires en Europe d'ici 2030.</p>
+            <p class="text-center display-6 my-5">Politiques pour un environnement urbain plus propre</d>
+            <div class="row">
+              <div class="col-2 d-flex justify-content-center align-items-center">
+                <img src="img/gfx/gavel.svg">
               </div>
-            </div>
-            <div class="col-12 col-md-6 col-xxl-12">
-              <p>Depuis 2000, les niveaux de polluants atmosphériques dans les villes ont considérablement augmenté. Selon un rapport de 2022, 99 % de la population mondiale respire un air qui dépasse les directives de l'OMS en matière de qualité de l'air et contient des niveaux élevés de polluants.</p>
-            </div>
-          </section>
-          <section class="row" aria-labelledby="Urban Greening">
-            <div class="col-12 col-md-6 col-xxl-12">
-              <div class="col d-flex align-items-center">
-                <a class="text-decoration-none" href="#urbanGreening">
-                  <div class="card mb-3 text-dark mx-auto" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4 my-auto">
-                        <picture>
-                          <source media="(min-width:768px)" class="img-fluid rounded-start" srcset="img/icon/greenleaf.png">
-                          <img src="img/gfx/HipHopCaucus.jpg" class="img-fluid rounded-start" alt="Green versus polluted city">
-                        </picture>
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Espaces verts</h5>
-                          <p class="card-text">Union européenne s'engage à planter au moins 3 milliards d'arbres supplémentaires en Europe d'ici à 2030.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-xxl-12">
-              <p class="mb-3">La reforestation urbaine, c'est-à-dire l'augmentation de la densité des arbres dans les villes et la reforestation périurbaine à proximité des villes densément peuplées, est une stratégie visant à atténuer les effets de la pollution atmosphérique et du changement climatique, à renforcer la biodiversité et à fournir des zones de loisirs.</p>
-            </div>
-          </section>
-          <section class="row" aria-labelledby="AboutUs">
-            <div class="col-12 col-md-6 col-xxl-12">
-              <div class="col d-flex align-items-center">
-                <div class="card mb-3 text-dark mx-auto" style="max-width: 540px;">
-                  <div class="row g-0">
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Dr Pierre Sicard</h5>
-                        <p class="card-text"><small class="text-dark">Coordinateur et scientifique principal</small></p>
-                      </div>
-                    </div>
-                    <div class="col-md-4 text-center my-auto">
-                      <img src="img/gfx/PierreSicard.jpg" class="img-fluid rounded-start" alt="Photo of Pierre Sicard">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <p>Le Dr Sicard est un expert de l'évaluation de l'impact de la pollution atmosphérique et du changement climatique sur la végétation et la foresterie urbaine, avec plus de 80 publications évaluées par des pairs. Il est coordonnateur adjoint du groupe de travail 8.04.00 "Pollution atmosphérique et changement climatique" de l'Union internationale des instituts de recherches forestières (IUFRO), participe au groupe d'experts de la CEE-ONU sur l'air pur dans les villes et est actif dans le forum européen sur l'air pur.</p>
-            </div>
-            <div class="col-12 col-md-6 col-xxl-12">
-              <h1 class="mt-xxl-5">A propos de nous</h1>
-              <p class="lead mb-3">ARGANS Limited est une PME britannique à croissance rapide qui jouit d'une réputation d'excellence dans la fourniture d'applications et de services de télédétection par satellite d'observation de la Terre, de solutions innovantes en matière d'analyse de données, de systèmes d'information géographique et d'utilisation de données de télédétection pour soutenir la bathymétrie par satellite, la cartographie côtière, la surveillance du changement climatique, l'information environnementale et l'intelligence géospatiale.</p>
-            </div>
-          </section>
-          <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <h1>Nous contacter</h1>
-              <p>Demandez une consultation pour discuter de la manière dont ARGANS pourrait vous aider dans votre stratégie d'écologisation de votre municipalité.</p>
-              <div class="text-center py-3">
-                <a class="btn btn-primary btn-lg" onclick="decode('cHNpY2FyZEBhcmdhbnMuZXUK')" role="button" id="cta">Courriel</a>
+              <div class="col-10">
+                <p>La réglementation européenne relative à la qualité de l'air (par exemple, la directive 2008/50/CE relative à la qualité de l'air) et d'autres politiques environnementales (par exemple, la stratégie européenne en faveur de la biodiversité à l'horizon 2030 ; l'initiative européenne en faveur des pollinisateurs) engagent les territoires et les villes d'au moins 20 000 habitants à :</p>
+                <ul>
+                  <li>Publier leur bilan carbone tous les 3 ans,</li>
+                  <li>Publier un Plan Climat Air Energie Territorial tous les 5 ans, et d'autre part</li>
+                  <li>Élaborer un "plan d'écologisation urbaine".</li>
+                </ul>
               </div>
             </div>
           </div>
-        </aside>
-        <div class="row text-light text-center text-sm-start px-3 p-md-5 mt-5" id="airQuality">
-          <article class="col-12">
-            <section class="row align-items-start g-5">
-              <div class="col-lg-6">
-                <p class="display-5 text-center mb-5">99% de la population mondiale respire un air de mauvaise qualité</p>
-                <p>Selon un rapport de l'Organisation mondiale de la santé publié en 2022, la quasi-totalité de la population mondiale respire un air qui dépasse les limites fixées par l'OMS et contient des niveaux élevés de polluants. Depuis 2000, les niveaux de ces polluants dans les villes ont augmenté de manière significative.</p>
-                <p>Plus de la moitié de la population mondiale vit dans des villes et beaucoup de ces villes ont en commun le problème de la mauvaise qualité de l'air. D'ici 2050, 70 % de la population mondiale résidera dans des zones urbaines, et la pollution de l'air extérieur entraînera environ 6,6 millions de décès prématurés et une perte généralisée d'années de vie en bonne santé. La pollution atmosphérique est le principal facteur de risque environnemental pour la santé au niveau mondial. Les polluants les plus préoccupants pour la santé publique sont les particules fines, le dioxyde d'azote, l'ozone, le monoxyde de carbone et le dioxyde de soufre.</p>
-                <p class="lead my-3">On estime aujourd'hui que les décès et les problèmes de santé imputables à la pollution atmosphérique sont comparables à d'autres risques sanitaires mondiaux majeurs. L'abaissement des niveaux de pollution atmosphérique peut réduire l'incidence des accidents vasculaires cérébraux, des cardiopathies, du cancer du poumon et des maladies respiratoires chroniques et aiguës [OMS 2021]. [OMS 2021]</p>
-                <p class="mb-3">La qualité de l'air est étroitement liée au climat et aux écosystèmes de la planète. Bon nombre des facteurs de pollution atmosphérique (c'est-à-dire la combustion de combustibles fossiles) sont également des sources d'émissions de gaz à effet de serre. La réduction des niveaux de pollution atmosphérique peut contribuer à l'atténuation du changement climatique à court et à long terme.</p>
-              </div>
-              <div class="col-lg-6">
-                <h1 class="text-center mb-3">Politiques pour un environnement urbain plus propre</h1>
-                <p>En 2015, l'Assemblée mondiale de la santé a adopté une résolution historique sur la qualité de l'air, la reconnaissant comme l'une des principales causes évitables de décès et de mauvaise santé. Les États membres se sont engagés à s'attaquer au problème.</p>
-                <p>Le plan d'action zéro 2021 de l'Agence européenne pour l'environnement fixe l'objectif de réduire de 55 % le nombre de décès prématurés dus à l'exposition aux particules fines d'ici à 2030, par rapport à 2005. [EEP 2021]</p>
-                <p>La réglementation européenne relative à la qualité de l'air (par exemple, la directive 2008/50/CE sur la qualité de l'air) et d'autres politiques environnementales (par exemple, la stratégie de l'UE en faveur de la biodiversité à l'horizon 2030 ; l'initiative de l'UE en faveur des pollinisateurs) engagent les territoires et les villes d'au moins 20 000 habitants à publier leur bilan carbone tous les trois ans, un plan climat-air-énergie territorial tous les cinq ans et à élaborer un plan de verdissement urbain.</p>
-                <picture>
-                  <img src="img/gfx/BenefitsUrbanFlora.png" class="img-fluid rounded mt-3" alt="Benefits of Urban Flora">
-                  <figcaption class="figure-caption text-light text-center fs-6 py-3">La plantation urbaine et la renaturation ou "verdissement" des espaces publics jouent un rôle majeur dans la réduction de la pollution atmosphérique et l'amélioration de la qualité de l'air, l'atténuation des effets du changement climatique, le renforcement de la biodiversité et la promotion du "bien-être" en offrant des espaces de loisirs et en favorisant la cohésion sociale.</figcaption>
-                </picture>
-              </div>
-            </section>
-          </article>
-        </div>
-        <div class="row text-light text-center text-sm-start px-3 m-0 p-md-5 mt-3" id="urbanGreening">
-          <article class="col-12">
-            <section class="row align-items-end g-5">
-              <div class="col-xl-7">
-                <h1 class="mb-3 text-start">Des villes plus vertes, un air plus pur</h1>
-                <p>La reforestation urbaine, c'est-à-dire l'augmentation de la densité des arbres dans les villes et la reforestation périurbaine à proximité des villes densément peuplées, est une stratégie visant à atténuer les effets de la pollution atmosphérique et du changement climatique, à renforcer la biodiversité et à fournir des zones de loisirs.</p>
-                <p>La plantation d'arbres peut contribuer à améliorer la qualité de l'air et à respecter les normes en matière d'air pur dans les villes. Les arbres possèdent une gamme remarquable de caractéristiques qui peuvent contribuer à réduire la pollution atmosphérique urbaine, et les villes du monde entier cherchent à développer des stratégies de plantation pour exploiter les avantages des espaces verts publics.</p>
-                <blockquote class="blockquote text-center my-5">
-                  <p class="mt=3 fs-3">Notre promesse de planter 3 milliards d'arbres supplémentaires consiste à planter les bons arbres, au bon endroit, dans le bon but.</p>
-                  <footer class="blockquote-footer fs-5">Virginijus Sinevičius, <cite title="European Commission">Commission européenne</cite></footer>
-                </blockquote>
-                <p>To set up ambitious greening plans adapted to actual needs, city planners need a suitable selection of plant species and a realistic tree inventory (public and private) to properly assess the role of urban green spaces in mitigating air pollution and climate change effects in and around the cities.</p>
-                <p class="lead">Pour mettre en place des plans de verdissement ambitieux adaptés aux besoins réels, les urbanistes ont besoin d'une sélection appropriée d'espèces végétales et d'un inventaire réaliste des arbres (publics et privés) afin d'évaluer correctement le rôle des espaces verts urbains dans l'atténuation de la pollution atmosphérique et des effets du changement climatique dans et autour des villes.</p>
-              </div>
-              <div class="col-xl-5 p-0">
-                <div class="accordion accordian-flush rounded m-3" id="accordionBenefits">
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headImproveAir">
-                      <button class="accordion-button fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#improveAir" aria-expanded="true" aria-controls="improveAir">
-                        Améliorer la qualité de l'air
-                      </button>
-                    </h2>
-                    <div id="improveAir" class="accordion-collapse collapse show" aria-labelledby="headImproveAir" data-bs-parent="#accordionBenefits">
-                      <div class="accordion-body text-light fs-5">
-                        <p>Les arbres absorbent les polluants atmosphériques, comme le dioxyde de soufre et le dioxyde d'azote, à travers leurs feuilles et filtrent les particules fines en les déposant sur le feuillage, d'où la pluie les emporte dans les égouts. En absorbant le dioxyde de carbone et en libérant de l'oxygène pendant la journée, les plantes vertes améliorent également la qualité de l'air.</p>
-                      </div>
+        </section>
+        <section class="row mt-5" id="greening" aria-labelledby="City Greening">
+          <div class="col">
+            <h1 class="mb-5">Verdissement des villes</h1>
+            <p>Le reboisement urbain, par exemple en augmentant la densité des arbres dans les villes, et le reboisement périurbain près des villes densément peuplées où il n'est pas facile de planter des arbres, peuvent contribuer à améliorer la qualité de l'air et à respecter les normes d'air pur dans les villes. La végétation facilite le dépôt de particules et de gaz sur les feuilles, le tronc et les branches, et absorbe les polluants atmosphériques gazeux grâce à leurs stomates. Cependant, certaines municipalités ont planté à la hâte n'importe quelle espèce d'arbre (par exemple, des émetteurs d'isoprène), et ces stratégies de plantation ont dégradé la qualité de l'air et augmenté l'exacerbation de l'asthme.</p>
+            <p>L'élimination de la pollution atmosphérique par les arbres dépend fortement de l'emplacement, des espèces d'arbres et des caractéristiques structurelles des arbres individuels telles que la hauteur de l'arbre, l'indice de surface foliaire et le diamètre de la couronne. À ce jour, la capacité d'élimination de la pollution atmosphérique par les arbres urbains n'a été étudiée que dans quelques villes à l'aide du modèle i-Tree Eco (ministère américain de l'agriculture) et des inventaires d'arbres municipaux. Les municipalités ne rendent compte de leur empreinte carbone que par le biais de l'inventaire municipal des arbres publics.</p>
+            <p>Cependant, les inventaires municipaux des arbres, principalement basés sur des observations de terrain et cartographiés dans un système d'information géographique, ne comprennent que les arbres gérés par la municipalité, qui représentent par exemple environ 20 à 30 % du nombre total d'arbres. Le coût élevé et la résolution spatiale des techniques, telles que la photographie aérienne et le balayage laser aéroporté, sont le principal facteur limitant permettant l'étude des arbres individuels.</p>
+            <p>Pour mettre en place un plan de verdissement ambitieux, adapté aux besoins réels, les urbanistes ont besoin d'une sélection appropriée d'espèces végétales ainsi que d'un inventaire réaliste des arbres (publics et privés) afin d'évaluer correctement le rôle des espaces verts urbains dans l'atténuation de la pollution atmosphérique et des effets du changement climatique dans et autour des villes.</p>
+          </div>
+        </section>
+        <section class="row mt-5" id="services" aria-labelledby="Our Services">
+          <div class="col">
+            <h1 class="mb-5">Nos services</h1>
+            <h4>Inventaire des espaces verts de la ville établi par satellite</h4>
+            <p>ARGANS acquiert des images satellites commerciales à très haute résolution (VHR), dont la résolution spatiale est inférieure à 50 cm, ce qui nous permet de détecter et d'identifier les arbres urbains individuels, <strong>publics et privés</strong>, et de les classer en fonction de leur nombre, de leur espèce, de leur hauteur, du diamètre de leur couronne, etc.</p>
+            <p>La télédétection par satellite nous permet de le faire pour l'ensemble de la ville et de préparer une carte précise des espaces verts de la ville et un inventaire détaillé des arbres, arbustes et gazons individuels publics et privés.</p>
+            <p class="mb-5">Ce service est facturé 2 500 € HT + 50 € par kilomètre carré de surface analysée.</p>
+            <h4>Quantifier les effets des espaces verts sur la qualité de l'air</h4>
+            <p>La connaissance des espèces et des caractéristiques de la verdure urbaine nous permet d'estimer les avantages environnementaux du patrimoine arboré urbain en unités mesurables à l'échelle de la ville entière.</p>
+            <p>Nous fournissons des estimations quantifiées du stockage du carbone, de la séquestration du dioxyde de carbone et de la capacité d'élimination des polluants atmosphériques en unités de tonnes de dioxyde d'azote, d'ozone et de particules par an.</p>
+            <p>Pour quantifier les avantages, nous fournissons des graphiques des îlots de chaleur urbains pour l'ensemble de la ville et une estimation du confort thermique (indice universel de confort thermique).</p>
+            <p class="mb-5">Cette prestation est facturée 5 000 € HT + 50 € par kilomètre carré de surface analysée.</p>
+            <h4>Recommandations pour des plans d'assainissement de l'air et de verdissement</h4>
+            <p>En fonction de votre territoire et des conditions environnementales, ARGANS fournit une liste d'espèces appropriées à planter pour un air plus sain en ville, des zones ouvertes disponibles et des recommandations de meilleures pratiques pour reverdir les villes (par exemple, le choix des espèces végétales, le nombre). Chaque espèce d'arbre est évaluée pour sa résistance aux conditions locales (par exemple, tolérance à la sécheresse, parasites et maladies), ses caractéristiques biologiques et sa capacité à absorber les polluants atmosphériques. Formation des autorités à l'élaboration de plans de verdissement urbain et suivi de leur exécution.</p>
+            <p class="mb-5">Ce service coûte à partir de 2 500 € hors taxes</p>
+            <h4>Évaluation des avantages sanitaires et économiques</h4>
+            <p>Pour apprécier pleinement les avantages d'un plan de verdissement urbain, ARGANS quantifie les bénéfices socio-économiques dérivés des programmes de plantation dans chaque zone : réduction des décès prématurés et des hospitalisations pour des maladies respiratoires et cardiovasculaires, ainsi que les coûts qui y sont liés.</p>
+            <p class="mb-5">Ce service coûte à partir de 2 500 € hors taxes.</p>
+            <h4>Plus-value de ces services</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Les douleurs de la ville (e.g, les problèmes)</th>
+                  <th scope="col">Gains de la ville (e.g, avantages)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Inventaire incomplet des arbres municipaux ne comptant que les arbres publics, c'est-à-dire gérés par la municipalité, alors que les arbres publics ne représentent que 20 % du nombre total.</td>
+                  <td>Inventaire plus fiable et précis des arbres (privés et publics) accessible aux autorités locales - Données précises sur l'emplacement, les espèces et les caractéristiques structurelles des arbres</td>
+                </tr>
+                <tr>
+                  <td>Enquête coûteuse et longue - Pour 5 000 arbres publics par km², il faudrait environ 1000 heures d'enquête sur le terrain, soit plus de 0,5 homme par an et par km².</td>
+                  <td>
+                    <p>Réduire le travail manuel de 50%.</p>
+                    <p>L'économie totale réalisée grâce au service serait de 30k€/an</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Les autorités municipales rendent compte de leur empreinte carbone par le biais d'un inventaire des arbres dans les zones publiques. Cet obstacle est inacceptable pour un diagnostic complet de l'empreinte carbone, c'est-à-dire pour compléter l'empreinte carbone des secteurs industriel et résidentiel.</td>
+                  <td>
+                    <p>Calcul précis de l'empreinte carbone et de la séquestration des gaz à effet de serre par les arbres.</p>
+                    <p>L'économie totale due au service serait de 50-60k€ tous les 3 ans.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Pour réduire efficacement la pollution atmosphérique dans les villes, les municipalités et les urbanistes ont besoin d'une sélection appropriée d'espèces d'arbres, de zones ouvertes disponibles pour la plantation et de recommandations.</td>
+                  <td>Élaboration d'un plan de re-naturation approprié et adapté (par exemple, cartographie dérivée de l'OT des zones ouvertes disponibles pour les stratégies de verdissement, cartographie par OT des îlots de chaleur urbains et des espèces d'arbres à planter) pour atteindre les normes de qualité de l'air dans les villes. La liste des espèces est basée sur la littérature</td>
+                </tr>
+                <tr>
+                  <td>L'inventaire des arbres est incomplet, et ces données doivent être transformées en effets d'atténuation des arbres sur la pollution atmosphérique. Certaines agences publiques nationales ont développé des méthodologies, mais elles tiennent rarement compte de la qualité de l'air.</td>
+                  <td>
+                    <p>Inventaire complet (nombre, espèces, caractéristiques structurelles des individus)</p>
+                    <p>L'économie totale due au service serait de 100k€ tous les 5 ans.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="row mt-5" id="clients" aria-labelledby="Clients">
+          <div class="col">
+            <h1 class="mb-5">Clients et utilisateurs cibles</h1>
+            <p><strong>Les villes et territoires d'au moins 20 000 habitants</strong> qui ont l'obligation de respecter les directives et règlements nationaux (par exemple, le Forum du gouvernement français sur l'environnement) et européens (par exemple, la Stratégie Biodiversité 2030) qui les engagent à produire un Bilan Carbone et un Plan Climat, Air et Énergie Territorial d'une part, et d'autre part à développer un " plan de végétalisation urbaine ambitieux ".</p>
+            <p>Les services proposés sont le résultat d'une douzaine d'années de travaux préparatoires pour répondre aux réglementations nationales et européennes.</p>
+            <p>ARGANS a déjà déployé et validé les services en Europe : Aix-en-Provence (France), Florence et Milan (Italie), Valence (Espagne), Kaunas (Lituanie).</p>
+            <picture>
+              <img class="d-block w-100" src="img/gfx/export01.png" alt="">
+            </picture>
+            <picture>
+              <img class="d-block w-100" src="img/gfx/export02.png" alt="">
+            </picture>
+            <picture>
+              <img class="d-block w-100" src="img/gfx/export03.png" alt="">
+            </picture>
+            <picture>
+              <img class="d-block w-100" src="img/gfx/export04.png" alt="">
+            </picture>
+            <p>En 2019, 29 et 69 décès prématurés et 189 et 416 admissions à l'hôpital auraient pu être "évités" en respectant les valeurs limites annuelles de l'Organisation mondiale de la santé à Aix et Florence, respectivement.</p>
+            <p><strong>Le développement de stratégies ambitieuses de verdissement urbain, en sélectionnant des espèces végétales efficaces, peut aider à respecter les normes de qualité de l'air en ville.</strong> Par exemple, chaque zone nouvellement reboisée (sur la base de 400 arbres) éliminera chaque année au moins 3,0 tonnes d'O3, 2,5 tonnes de NO2, 1,5 tonne de PM10, 0,8 tonne de PM2,5 et 10 tonnes de CO2, et permettra de rafraîchir l'air ambiant de 2 °C par rapport à la zone environnante et d'augmenter les stocks de carbone (2 tonnes par ha). Avec la réduction de la pollution atmosphérique ci-dessus, deux décès prématurés et dix admissions à l'hôpital pour des maladies respiratoires et cardiovasculaires pourraient être "évités" chaque année. Chaque zone nouvellement reboisée pourrait prévenir des dommages évalués à 173 000 € par an en raison de la quantité de O3, NO2, PM et CO2 éliminée. La zone nouvellement reboisée peut également améliorer sensiblement la qualité de vie des citoyens en leur offrant un espace pour rencontrer d'autres personnes, faire du sport et mener une vie active et saine.</p>
+          </div>
+        </section>
+        <section class="row mt-5" id="contact" aria-labelledby="Contact">
+          <div class="col-12 col-md-6">
+            <h1 class="mt-xxl-5">A propos de nous</h1>
+            <p class="lead mb-3 text-dark">ARGANS Limited est une PME britannique à croissance rapide qui jouit d'une réputation d'excellence dans la fourniture d'applications et de services de télédétection par satellite d'observation de la Terre, de solutions innovantes en matière d'analyse de données, de systèmes d'information géographique et d'utilisation de données de télédétection pour soutenir la bathymétrie par satellite, la cartographie côtière, la surveillance du changement climatique, l'information environnementale et l'intelligence géospatiale.</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="col d-flex align-items-center">
+              <div class="card mb-3 text-dark mx-auto" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Dr Pierre Sicard</h5>
+                      <p class="card-text"><small class="text-dark">Coordinateur et scientifique principal</small></p>
                     </div>
                   </div>
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headReduceHeat">
-                      <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#reduceHeat" aria-expanded="false" aria-controls="reduceHeat">
-                        Réduire la chaleur urbaine
-                      </button>
-                    </h2>
-                    <div id="reduceHeat" class="accordion-collapse collapse" aria-labelledby="headImproveAir" data-bs-parent="#accordionBenefits">
-                      <div class="accordion-body text-light fs-5">
-                        <p>Les arbres ont un effet rafraîchissant en créant des zones d'ombre, mais aussi grâce au processus par lequel l'énergie solaire évapore l'eau qui a été transpirée des racines aux feuilles. Cela réduit l'énergie solaire disponible pour réchauffer l'air.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headBiodiversity">
-                      <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#biodiversity" aria-expanded="false" aria-controls="biodiversity">
-                        Protéger la biodiversité
-                      </button>
-                    </h2>
-                    <div id="biodiversity" class="accordion-collapse collapse" aria-labelledby="headBiodiversity" data-bs-parent="#accordionBenefits">
-                      <div class="accordion-body text-light fs-5">
-                        <p>Le reboisement et la renaturation des zones urbaines offrent des refuges à la faune et à la flore, protégeant ainsi la biodiversité. Les canaux verts peuvent relier et aider à maintenir les habitats qui soutiennent et préservent les espèces et les écosystèmes menacés.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headWellbeing">
-                      <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#wellbeing" aria-expanded="false" aria-controls="wellbeing">
-                        Promouvoir le bien-être
-                      </button>
-                    </h2>
-                    <div id="wellbeing" class="accordion-collapse collapse" aria-labelledby="headWellbeing" data-bs-parent="#accordionBenefits">
-                      <div class="accordion-body text-light fs-5">
-                        <p>Les activités de plein air et les interactions sociales sont essentielles à la santé, au développement et au bien-être de l'homme. Les espaces verts publics jouent un rôle essentiel dans la création d'espaces sûrs et sains, d'une grande beauté naturelle, pour les loisirs et les activités sociales.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headResilience">
-                      <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resilience" aria-expanded="false" aria-controls="resilience">
-                        Résilience climatique
-                      </button>
-                    </h2>
-                    <div id="resilience" class="accordion-collapse collapse" aria-labelledby="headResilience" data-bs-parent="#accordionBenefits">
-                      <div class="accordion-body text-light fs-5">
-                        <p>Les arbres ont un effet d'atténuation direct en séquestrant le dioxyde de carbone de l'atmosphère et en compensant l'empreinte carbone urbaine. En maintenant la stabilité du sol et en réduisant le ruissellement des sédiments, les arbres contribuent à réduire le risque d'érosion et, en remplaçant l'asphalte et le béton, augmentent la perméabilité pour améliorer les inondations.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </article>
-          <article class="col-12 mt-5">
-            <section class="row align-items-end g-5">
-              <div class="col-lg-6">
-                <h1>Analyse d'impact</h1>
-                <p class="lead">Toutes les espèces d'arbres ne sont pas adaptées à la plantation en milieu urbain. L'élimination de la pollution atmosphérique par les arbres dépend fortement de l'emplacement, des espèces d'arbres et des caractéristiques structurelles des arbres individuels, telles que la hauteur de l'arbre, l'indice de surface foliaire et le diamètre de la couronne.</p>
-                <p>À ce jour, la capacité des arbres urbains à éliminer la pollution atmosphérique a été étudiée dans quelques villes par le biais d'inventaires d'arbres municipaux, principalement basés sur des observations de terrain et cartographiés dans des systèmes d'information géographique. Certains, comme le modèle i-Tree ECO (ministère de l'agriculture des États-Unis), comprennent des composantes d'approvisionnement en nuages et des mesures de la qualité de l'air, mais ces inventaires ne comprennent généralement que les arbres gérés par la municipalité, ce qui peut ne représenter que 20 à 30 % du nombre total d'arbres urbains.</p>
-                <p>Le principal facteur limitant l'étude des arbres individuels est le coût élevé et la résolution spatiale des techniques, telles que la photographie aérienne et le balayage laser aéroporté.</p>
-              </div>
-              <div class="col-lg-6">
-                <p>Des erreurs ont été commises, certaines municipalités ont planté à la hâte de mauvaises espèces d'arbres, et ces stratégies de plantation ont dégradé la qualité de l'air et augmenté l'exacerbation de l'asthme. Par exemple, le tremble et le peuplier sont membres d'un genre d'arbre qui émet des niveaux élevés d'isoprène, lequel réagit avec la lumière du soleil et les NOx pour produire de l'ozone. </p>
-                <div class="col d-flex justify-content-center align-items-center px-3">
-                  <div class="card text-dark" style="max-width: 800px;">
-                    <div class="row g-0">
-                      <div class="col-xl-4 text-center m-auto">
-                        <img src="img/gfx/Isoprene.svg" class="img-fluid rounded-start" alt="Isoprene Molecule">
-                      </div>
-                      <div class="col-xl-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Isoprene</h5>
-                          <p class="card-text">L'isoprène est omniprésent. C'est l'élément constitutif des terpènes et ces composés organiques volatils (COV) présentent à la fois un risque primaire pour la santé et un risque indirect par le biais de réactions photochimiques produisant de l'ozone et des particules PM25, éléments du smog.</p>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="col-md-4 text-center my-auto">
+                    <img src="img/gfx/PierreSicard.jpg" class="img-fluid rounded-start" alt="Photo of Pierre Sicard">
                   </div>
                 </div>
-                <p class="mt-3">Exploiter efficacement les espaces verts urbains, c'est "...planter les bons arbres, au bon endroit, dans le bon but". ARGANS peut vous aider à faire les bons choix lorsque vous planifiez des programmes de plantation urbaine.</p>
               </div>
-            </section>
-          </article>
-        </div>
-        <div class="row text-light text-center text-sm-start px-3 m-0 p-md-5 g-5" id="services">
-          <article class="col-12">
-            <div class="text-center">
-              <p class="display-5">De manière unique, par rapport à ses concurrents, notre processus offre une solution de gestion de bout en bout pour soutenir les stratégies de plantation des municipalités selon les recommandations des "meilleures pratiques".</p>
             </div>
-            <section class="row align-items-start mt-5 g-5">
-              <div class="col-12 col-lg-5 p-0">
-                <div class="accordion accordian-flush rounded" id="accordionAdvantages">
-                  <div class="accordion-item bg-transparent">
-                    <h2 class="accordion-header" id="headGreeningPlan">
-                      <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#greeningPlan" aria-expanded="true" aria-controls="greeningPlan">
-                        ARGANS peut aider à développer un plan de re-naturation et de re-boisage urbain adapté, durable et adapté aux besoins, afin de respecter les normes de qualité de l'air...
-                      </button>
-                    </h2>
-                    <div id="greeningPlan" class="accordion-collapse collapse show" aria-labelledby="headGreeningPlan" data-bs-parent="#accordionAdvantages">
-                      <div class="accordion-body text-light fs-6">
-                        <p>C'est l'objectif d'ARGANS Green City, qui fournit aux autorités des recommandations d'experts pour la sélection d'espèces d'arbres appropriées, la cartographie des zones ouvertes disponibles pour la plantation, la tenue d'un inventaire complet des arbres individuels et la fourniture de paramètres précis pour mesurer les avantages d'un air plus pur et d'un ombrage accru.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headAccuracy">
-                      <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accuracy" aria-expanded="false" aria-controls="accuracy">
-                        ... en fournissant un inventaire complet et précis des arbres publics et privés dans une zone d'intérêt ...
-                      </button>
-                    </h2>
-                    <div id="accuracy" class="accordion-collapse collapse" aria-labelledby="headAccuracy" data-bs-parent="#accordionAdvantages">
-                      <div class="accordion-body text-light fs-6">
-                        <p>Nous utilisons des images satellites à très haute résolution spatiale pour détecter les arbres individuels dans les limites de la ville choisie, qu'ils soient publics ou privés (ce qui peut représenter jusqu'à 80 % du total). Nous fournissons des données précises sur l'emplacement, les espèces et les caractéristiques structurelles des arbres de l'inventaire.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headSurvey">
-                      <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#survey" aria-expanded="false" aria-controls="survey">
-                        ... à une fraction du coût et du temps de l'arpentage par les moyens traditionnels ...
-                      </button>
-                    </h2>
-                    <div id="survey" class="accordion-collapse collapse" aria-labelledby="headSurvey" data-bs-parent="#accordionAdvantages">
-                      <div class="accordion-body text-light fs-6">
-                        <p>L'arpentage de 5000 arbres publics par km2 nécessitera environ 1000 heures d'enquête sur le terrain, soit plus de 0,5 heures-personne par an par km2. L'utilisation d'ARGANS réduira le travail manuel d'au moins 50%, avec une économie due à l'utilisation du service de 30k€ par an.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headFootprint">
-                      <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#footprint" aria-expanded="false" aria-controls="footprint">
-                        ... quantifier l'impact des arbres et de la végétation sur l'empreinte carbone urbaine ...
-                      </button>
-                    </h2>
-                    <div id="footprint" class="accordion-collapse collapse" aria-labelledby="headFootprint" data-bs-parent="#accordionAdvantages">
-                      <div class="accordion-body text-light fs-6">
-                        <p>Les autorités municipales utilisent un inventaire des arbres publics pour rendre compte de leur empreinte carbone, ainsi que l'estimation du carbone résidentiel et industriel. Cette méthode sous-estime jusqu'à 80 % le nombre d'arbres. Nous fournissons un calcul précis de l'empreinte carbone et de la séquestration des GES par les arbres urbains.</p>
-                        <p>Les économies totales dues à ce service seraient de l'ordre de 50-60k€ tous les trois ans.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headMitigation">
-                      <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mitigation" aria-expanded="false" aria-controls="mitigation">
-                        ... et fournir une évaluation précise de l'effet d'atténuation de la qualité de l'air dû à l'effet des arbres urbains.
-                      </button>
-                    </h2>
-                    <div id="mitigation" class="accordion-collapse collapse" aria-labelledby="headMitigation" data-bs-parent="#accordionAdvantages">
-                      <div class="accordion-body text-light fs-6">
-                        <p>Certaines autorités publiques développent des méthodologies, mais elles tiennent rarement compte de la qualité de l'air. Grâce à un inventaire complet des arbres, comprenant le nombre, les espèces et les caractéristiques individuelles, nous sommes en mesure de fournir des estimations précises et exactes des effets environnementaux de la plantation.</p>
-                        <p>Économie totale due au service de l'ordre de 100k€ tous les cinq ans.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <p class="text-dark">Le Dr Sicard est un expert de l'évaluation de l'impact de la pollution atmosphérique et du changement climatique sur la végétation et la foresterie urbaine, avec plus de 80 publications évaluées par des pairs. Il est coordonnateur adjoint du groupe de travail 8.04.00 "Pollution atmosphérique et changement climatique" de l'Union internationale des instituts de recherches forestières (IUFRO), participe au groupe d'experts de la CEE-ONU sur l'air pur dans les villes et est actif dans le forum européen sur l'air pur.</p>
+          </div>
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center">
+              <h1>Nous contacter</h1>
+              <p class="text-dark">Demandez une consultation pour discuter de la manière dont ARGANS pourrait vous aider dans votre stratégie d'écologisation de votre municipalité.</p>
+              <div class="text-center py-3">
+                <a class="btn btn-primary btn-lg" onclick="decode('cHNpY2FyZEBhcmdhbnMuZXUK')" role="button" id="cta">Email Green City</a>
               </div>
-              <div class="col-12 col-lg-7">
-                <p class="lead">Notre gamme innovante de services a été développée pendant plus de dix ans pour soutenir les réglementations européennes sur la qualité de l'air : Aix-en-Provence (France), Florence et Milan (Italie), Valence (Espagne) et Kaunas (Lituanie).</p>
-                <h1>Études de cas</h1>
-                <p>En 2019, 29 et 69 décès prématurés et 189 et 416 admissions à l'hôpital auraient pu être "évités" en respectant les valeurs limites annuelles de l'Organisation mondiale de la santé à Aix et Florence, respectivement.</p>
-                <p>C'est la conclusion qui donne à réfléchir d'une étude de cas ARGANS portant sur deux villes européennes. D'un autre côté, en sélectionnant des espèces végétales efficaces et en développant une stratégie ambitieuse de verdissement urbain, ARGANS pouvait fournir une estimation détaillée des améliorations à apporter pour respecter les normes de qualité de l'air de la ville.</p>
-                <p>Par exemple, chaque zone nouvellement reboisée (sur la base de 400 arbres) éliminera chaque année au moins 3,0 tonnes d'O3, 2,5 tonnes de NO2, 1,5 tonne de PM10, 0,8 tonne de PM2,5 et 10 tonnes de CO2, et permettra de rafraîchir l'air ambiant de 2 °C par rapport à la zone environnante et d'augmenter les stocks de carbone (2 tonnes par ha).</p>
-                <p>Avec la réduction de la pollution atmosphérique ci-dessus, deux décès prématurés et dix admissions à l'hôpital pour des maladies respiratoires et cardiovasculaires pourraient être "évités" chaque année. Chaque zone nouvellement reboisée pourrait prévenir des dommages évalués à 173 000 € par an en raison de la quantité de O3, NO2, PM et CO2 éliminée. La zone nouvellement reboisée peut également améliorer sensiblement la qualité de vie des citoyens en leur offrant un espace pour rencontrer d'autres personnes, faire du sport et mener une vie active et saine.</p>
-              </div>
-            </section>
-            <section class="container-fluid mt-5">
-              <div id="imageGallery" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <picture>
-                      <source media="(min-width:1280px)" srcset="img/gfx/output_02_900x640.png">
-                      <source media="(max-width:800px)" srcset="img/gfx/output_02_450x320.jpg">
-                      <img class="d-block w-100" src="img/gfx/output_02_900x640.jpg" alt="Aix-en-Provence, France"/>
-                      <figcaption class="figure-caption text-light text-center fs-6 my-3">Aix-en-Provence, France</figcaption>
-                    </picture>
-                  </div>
-                  <div class="carousel-item">
-                    <picture>
-                      <source media="(min-width:1280px)" srcset="img/gfx/output_01_900x640.png">
-                      <source media="(max-width:800px)" srcset="img/gfx/output_01_450x320.jpg">
-                      <img class="d-block w-100" src="img/gfx/output_01_900x640.jpg" alt="Aix-en-Provence, France"/>
-                      <figcaption class="figure-caption text-light text-center fs-6 my-3">Aix-en-Provence, Stade Georges Carcassonne</figcaption>
-                    </picture>
-                  </div>
-                  <div class="carousel-item">
-                    <picture>
-                      <source media="(min-width:1280px)" srcset="img/gfx/output_03_900x640.png">
-                      <source media="(max-width:800px)" srcset="img/gfx/output_03_450x320.jpg">
-                      <img class="d-block w-100" src="img/gfx/output_03_900x640.jpg" alt="Aix-en-Provence, tree identification"/>
-                      <figcaption class="figure-caption text-light text-center fs-6 my-3">Aix-en-Provence, tree identification</figcaption>
-                    </picture>
-                  </div>
-                  <div class="carousel-item">
-                    <picture>
-                      <source media="(min-width:1280px)" srcset="img/gfx/output_04_900x640.png">
-                      <source media="(max-width:800px)" srcset="img/gfx/output_04_450x320.jpg">
-                      <img class="d-block w-100" src="img/gfx/output_04_900x640.jpg" alt="Florence, Atletica Firenze Marathon"/>
-                      <figcaption class="figure-caption text-light text-center fs-6 my-3">Florence, Atletica Firenze Marathon</figcaption>
-                    </picture>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#imageGallery" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#imageGallery" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="false"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </section>
-          </article>
-        </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
 
@@ -567,9 +285,9 @@
         <div class="col-md-6 col-lg-2 text-center">
           <h1 class="mb-3">Follow</h1>
           <div class="d-flex justify-content-center" id="social-media">
-            <a class="btn btn-primary me-3" href="https://linkedin.com/company/419849?trk=prof-exp-company-name" role="button"><i class="fa fa-linkedin"></i></a>
-            <a class="btn btn-primary" href="https://twitter.com/ARGANS_Ltd" role="button"><i class="fa fa-twitter"></i></a>
-            <a class="btn btn-primary ms-3" href="https://facebook.com/Argans-Ltd-398626617605986/" role="button"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-primary me-3" href="https://linkedin.com/company/419849?trk=prof-exp-company-name" role="button"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="btn btn-primary" href="https://twitter.com/ARGANS_Ltd" role="button"><i class="fa-brands fa-twitter"></i></a>
+            <a class="btn btn-primary ms-3" href="https://facebook.com/Argans-Ltd-398626617605986/" role="button"><i class="fa-brands fa-facebook"></i></a>
           </div>
           <div class="mt-5 mb-3">
             <p>ARGANS est une société certifiée ISO9001</p>
@@ -641,9 +359,10 @@
           </div>
         </div>
       </div>
+      <p><a href="index_alt.html"><i class="fa-regular fa-archway text-secondary"></i></a></p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="js/custom.js"></script>
   </body>
 </html>

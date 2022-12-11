@@ -48,497 +48,211 @@
     <meta name="twitter:site" content="@ARGANS_Ltd" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@500&display=swap" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body data-bs-spy="scroll" data-bs-target="#top-navbar" data-bs-offset="0">
-    <header class="sticky-top">
-      <nav class="navbar navbar-expand-xl navbar-dark bg-dark" id="top-navbar">
-        <button class="navbar-toggler mx-2" id="nav_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="navbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title text-light" id="navbarLabel">ARGANS Green City</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="bg-light d-none d-lg-block py-3">
+      <div class="container-fluid">
+        <div class="row topbar">
+          <div class="col-2 align-items-center">
+            <a href="https://argans.co.uk"><img src="img/logo/argans_logo.svg" width="200vw" alt="ARGANS logo" /></a>
           </div>
-          <div class="offcanvas-body text-center">
-            <div class="navbar-brand mb-5 mb-xl-1 ms-xl-5">
-              <a href="https://argans.co.uk"><img src="img/logo/ARGANS2022_logo.svg" width="150vw" alt="ARGANS logo" /></a>
-            </div>
-            <ul class="fs-5 fw-bold navbar-nav justify-content-end flex-grow-1 pe-3 mt-3">
-              <li class="nav-item mx-1"><a class="nav-link active" href="#top">Home</a></li>
-              <li class="nav-item mx-1"><a class="nav-link" href="#airQuality">Air Quality</a></li>
-              <li class="nav-item mx-1"><a class="nav-link" href="#urbanGreening">Green Spaces</a></li>
-              <li class="nav-item mx-1"><a class="nav-link" href="#services">Services</a></li>
-              <li class="nav-item mx-1"><a class="nav-link" href="map/index.html" target="_blank">Map Viewer</a></li>
-            </ul>
-            <div class="pe-xl-5 mt-5 mt-xl-0">
-              <select class="selectpicker" data-width="fit" id="language">
-                <option data-content='ER'>English&nbsp; </option>
-                <option data-content='FR'>Français&nbsp;</option>
-              </select>
-            </div>
+          <div class="col-2">
+            <img src="img/logo/AirTree Logo.png" class="d-block w-100" alt="Green City logo">
+          </div>
+          <div class="col-4 text-center">
+            <p class="display-5">Green City</p>
+          </div>
+          <div class="col-4 text-end">
+            <select class="selectpicker" data-width="fit" id="language">
+              <option data-content='ER'>English&nbsp; </option>
+              <option data-content='FR'>Français&nbsp;</option>
+            </select>
           </div>
         </div>
+      </div>
+    </div>
+    <header class="sticky-top">
+      <nav class="navbar nav-pills nav-justified p-3 bg-light">
+        <a class="nav-item nav-link active" href="#top">Home</a>
+        <a class="nav-item nav-link" href="#challenges">City Challenges</a>
+        <a class="nav-item nav-link" href="#greening">City Greening</a>
+        <a class="nav-item nav-link" href="#services">Our Services</a>
+        <a class="nav-item nav-link" href="#clients">Clients</a>
+        <a class="nav-item nav-link" href="#contact">Contact</a>
       </nav>
     </header>
-
-    <main class="container-fluid text-light p-2 p-lg-5" role="main">
+    <div class="hero">
+        <div>
+          <img src="img/gfx/hero01.jpg">
+        </div>
+        <div>
+          <img class="d-block w-100" src="img/gfx/hero02.jpg">
+          <img class="d-block w-100" src="img/gfx/hero03.jpg">
+        </div>
+      </div>
+    <main class="container text-dark p-2 p-lg-5" role="main">
       <div class="row">
-        <article class="col-12 px-3"> <!-- col-xxl-9 -->
-          <section class="row px-3" id="top">
-            <div class="d-flex flex-column col mt-0 px-3 align-items-center justify-content-between">
-              <img src="img/logo/GreenCityLogo_640x640.svg" class="d-block w-100" alt="Green City logo">
-              <p class="display-5 text-center">A ground-breaking service supporting Urban Clean Air</p>
-              <div class="d-flex mt-5">
-                <div class="card-group" id="iconbox">
-                  <div class="card bg-transparent p-3">
-                    <img src="img/icon/clean_air_icon.png" class="card-img-top" alt="clean air icon">
+        <section class="row mt-5" id="challenges" aria-labelledby="City Challenges">
+          <div class="col">
+            <h1 class="mb-5">City Challenges</h1>
+            <div class="row g-5">
+              <div class="col-md-6">
+                <div class="card text-dark mx-auto">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Air Quality &amp; Health</h5>
+                    <p class="card-text">Air pollution is attributed to 11.65% of deaths globally, attributable to 7 million premature deaths annually</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <p>By 2050, 70% of the world's population will reside urban areas, and outdoor air pollution would lead to about 6.6 million premature deaths. To date, millions of people are exposed to concentrations above the limit values for the human health protection for fine particles, nitrogen dioxide, and tropospheric ozone with significant rising levels in cities since 2000s.</p>
+              </div>
+            </div>
+            <p>The successive heat waves and air pollution peaks occurred since 2000s, and COVID-19 pandemic, allowed a considerable awareness of public authorities, and have opened the door to planting strategies (greening and re-naturing cities) to mitigate the air pollution and climate change effects, enhance biodiversity, and provide recreational areas. Under the European Green Deal, the European Union commits to plant at least 3 billion additional trees in Europe by 2030.</p>
+            <p class="text-center display-6 my-5">Policies for a cleaner urban environment</d>
+            <div class="row">
+              <div class="col-2 d-flex justify-content-center align-items-center">
+                <img src="img/gfx/gavel.svg">
+              </div>
+              <div class="col-10">
+                <p>The European regulations for air quality (e.g., Air Quality Directive 2008/50/EC) and other environmental policies (e.g., EU Biodiversity Strategy 2030; EU Pollinators Initiative) commit territories and cities of at least 20,000 inhabitants to:</p>
+                <ul>
+                  <li>Publish their Carbon Footprint every 3 years,</li>
+                  <li>Publish a Territorial Climate Air and Energy Plan every 5 years, and on the other hand</li>
+                  <li>Develop an “Urban Greening Plan”.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="row mt-5" id="greening" aria-labelledby="City Greening">
+          <div class="col">
+            <h1 class="mb-5">City Greening</h1>
+            <p>Urban reforestation, e.g., by increasing the tree density in cities, and peri-urban reforestation near densely populated cities where it is not easy to plant trees, can help improve air quality and meet clean air standards in cities. The vegetation facilitates deposition of particles and gases on leaves, trunk, and branches, and absorbs gaseous air pollutants through their stomata. However, some municipalities have hurriedly planted any tree species (e.g., isoprene emitters), and these planting strategies have degraded air quality and increased asthma exacerbation.</p>
+            <p>Air pollution removal by trees strongly depends on the location, tree species, and structural characteristic of individual trees such as tree height, leaf area index, and crown diameter. To date, the air pollution removal capacity by urban trees were investigated only in a few cities by using the i-Tree Eco model (US Department of Agriculture) and municipal tree inventories. Municipalities only report their Carbon footprint through the municipal inventory of public trees</p>
+            <p>However, the municipal tree inventories, mainly based on field observations and mapped in a Geographical Information Systems, include only trees managed by the municipality which represent e.g., about 20-30% of the total number of trees. The high cost and spatial resolution of techniques, such as aerial photography and airborne laser scanning, are the main limiting factor allowing the study of individual trees.</p>
+            <p>To set up an ambitious greening plan, adapted to real needs, city planners need a suitable selection of plant species as well as a realistic tree inventory (public and private) to properly assess the role of urban green spaces in mitigating air pollution and the climate change effects in and around the cities</p>
+          </div>
+        </section>
+        <section class="row mt-5" id="services" aria-labelledby="Our Services">
+          <div class="col">
+            <h1 class="mb-5">Our Services</h1>
+            <h4>Satellite-derived city-wide green spaces inventory</h4>
+            <p>ARGANS acquires commercial Very High Resolution (VHR) satellite images, which have a spatial resolution of less than 50cm, that enables us to detect and identify individual <strong>public and private</strong> urban trees and to classify them accordingly e.g., counting, species, height, crown diameter etc</p>
+            <p>Satellite remote sensing allows us to do this for the entire city and prepare an accurate chart of green spaces within the city and a detailed inventory of the public and private individual trees, shrubs and grass</p>
+            <p class="mb-5">This service is billed at € 2,500 excluding tax + € 50 per square kilometer of area analyzed.</p>
+            <h4>Quantifying the effects of green Spaces on air quality</h4>
+            <p>Knowledge of species and characteristics of the urban greenery allows us to estimate the environmental benefits of the urban tree heritage in measurable units at the scale of the entire city.</p>
+            <p>We provide quantified estimates of carbon storage, carbon dioxide sequestration, and air pollutant removal capacity in units of tons of nitrogen dioxide, ozone, and particles per year</p>
+            <p>To quantify the benefits, we provide charts of Urban Heat Islands for the entire city and an estimate of thermal comfort (Universal Thermal Comfort Index).</p>
+            <p class="mb-5">This service is billed at € 5,000 excluding tax + € 50 per square kilometer of area analyzed.</p>
+            <h4>Recommendations for clean air and greening plans</h4>
+            <p>Depending on your territory and environmental conditions, ARGANS provides a list of suitable species to plant for healthier air in city, open areas available, and best practices recommendations for regreening cities (e.g., choice of plant species, number). Each tree species is assessed for its resistance to local conditions (e.g., drought tolerance, pests, and diseases), biological characteristics, and capacity to absorb air pollutants. Training of authorities in the development of Urban Greening Plans and monitoring of execution</p>
+            <p class="mb-5">This service costs from € 2,500 excluding tax</p>
+            <h4>Assessment of health and economic benefits</h4>
+            <p>To fully appreciate the benefits of an Urban Greening Plan, ARGANS quantifies the socio-economic benefits derived from planting programs in each area: reduction in premature deaths and hospitalizations for respiratory and cardiovascular illnesses and the related costs.</p>
+            <p class="mb-5">This service costs from € 2,500 excluding tax.</p>
+            <h4>Plus-value of such services</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">City's pains (e.g. problems)</th>
+                  <th scope="col">City's gains (e.g. benefits)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Incomplete municipal trees inventory counting only public trees, i.e., managed by the municipality, while public trees represent only 20% of the total number</td>
+                  <td>More reliable and accurate trees inventory (private and public) accessible to local authorities - Precise data on the location, species, and structural characteristics of trees</td>
+                </tr>
+                <tr>
+                  <td>Costly and time-consuming survey - For 5,000 public trees per km², it would take around 1000 hours of field investigation, i.e., more than 0.5-man per year per km²</td>
+                  <td>
+                    <p>Reduce manual labour by 50%</p>
+                    <p>Total savings due to the service would be 30k€/year</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>City authorities report their carbon footprint through an inventory of trees in public areas. Such hindrance is unacceptable for a complete diagnosis of the Carbon Footprint, i.e., to complement the carbon footprint from industrial and residential sector</td>
+                  <td>
+                    <p>Precise calculation of the carbon footprint and GHGs sequestration by trees</p>
+                    <p>Total savings due to the service would be 50-60k€ every 3 years.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>To efficiently reduce air pollution in cities, municipalities and city planners need a suitable selection of tree species, available open areas for planting, and recommendations</td>
+                  <td>Development of a suitable and fit-for-purpose re-naturing plan (e.g., EO-derived mapping of open areas available for greening strategies, EO-mapping of Urban Heat Islands, and tree species to be planted) to reach air quality standards in cities. The list of species is based on literature</td>
+                </tr>
+                <tr>
+                  <td>Incomplete trees inventory, and these data must be transformed in mitigation effects of trees on air pollution. Some national public agencies have developed methodologies, but seldom account for air quality</td>
+                  <td>
+                    <p>Full inventory (number, species, structural characteristics of individuals)</p>
+                    <p>Total savings due to the service would be 100k€ every 5 years</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="row mt-5" id="clients" aria-labelledby="Clients">
+          <div class="col">
+            <h1 class="mb-5">Clients & target users</h1>
+            <p><strong>Cities and territories of at least 20,000 inhabitants</strong> which are obligated to fulfill the national (e.g., the French Government Forum on the Environment) and European directives and regulations (e.g., Biodiversity Strategy 2030) which commit them to produce a Carbon Footprint Assessment and a Territorial Climate, Air and Energy Plan on the one hand, and on the other hand to develop an "ambitious urban greening plan".</p>
+            <p>The proposed services are the result of a dozen years of preparatory works to answer national and European regulations.</p>
+            <p>ARGANS already deployed and validated the services across Europe: Aix-en-Provence (France), Florence and Milan (Italy), Valencia (Spain), Kaunas (Lithuania).</p>
+            <picture>
+              <img class="d-block w-100" src="img/gfx/export01.png" alt="">
+            </picture>
+            <picture>
+              <img class="d-block w-100" src="img/gfx/export02.png" alt="">
+            </picture>
+            <picture>
+              <img class="d-block w-100" src="img/gfx/export03.png" alt="">
+            </picture>
+            <picture>
+              <img class="d-block w-100" src="img/gfx/export04.png" alt="">
+            </picture>
+            <p>In 2019, 29 and 69 premature deaths and 189 and 416 hospital admissions could have been “avoided” by respecting the World Health Organization annual limit values in Aix and Florence, respectively.</p>
+            <p><strong>The development of ambitious urban greening strategies, by selecting efficient plant species, can help meeting air quality standards in city.</strong> The new reforested area (based on 400 trees) will remove annually at least 3.0 tons O3, 2.5t NO2, 1.5t PM10, 0.8t PM2.5, 10t CO2, ambient air 2°C cooler compared to surrounding area and increase carbon stocks (2t per ha). With the above air pollution reduction, 2 premature deaths and 10 hospital admissions for respiratory and cardio-vascular diseases could be “avoided” annually. Each new reforested area could prevent damages valued at <strong>€173,000 per year</strong> due to the quantity of O3, NO2, PM and CO2 removed. The new reforested area can also markedly improve quality of life of citizens by providing an area to meet others, to play sports and part of an active healthy lifestyle.</p>
+          </div>
+        </section>
+        <section class="row mt-5" id="contact" aria-labelledby="Contact">
+          <div class="col-12 col-md-6">
+            <h1 class="mt-xxl-5">About Us</h1>
+            <p class="lead mb-3 text-dark">ARGANS Limited, is a fast-growing UK SME that has a reputation for excellence in delivering Earth Observation satellite remote sensing applications and services, innovative solutions in data analytics, Geographical Information Systems and the use of remote sensing data to support satellite derived bathymetry, coastal charting and mapping, climate change monitoring, environmental information, and geospatial intelligence.</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="col d-flex align-items-center">
+              <div class="card mb-3 text-dark mx-auto" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title text-center">Improve Air Quality</h5>
+                      <h5 class="card-title">Dr Pierre Sicard</h5>
+                      <p class="card-text"><small class="text-dark">Co-ordinator & Lead Scientist</small></p>
                     </div>
                   </div>
-                  <div class="card bg-transparent p-3">
-                    <img src="img/icon/bee_icon.png" class="card-img-top" alt="enhance biodiversity icon">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Enhance Biodiversity</h5>
-                    </div>
-                  </div>
-                  <div class="card bg-transparent p-3">
-                    <img src="img/icon/resilience_icon.png" class="card-img-top" alt="climate resilience icon">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Climate Resilience</h5>
-                    </div>
+                  <div class="col-md-4 text-center my-auto">
+                    <img src="img/gfx/PierreSicard.jpg" class="img-fluid rounded-start" alt="Photo of Pierre Sicard">
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <p class="display-6 text-center mb-5">
-                Our services offer a unique end-to-end management solution to support municipal 'green space' strategies.
-              </p>
-              <div class="accordion accordian-flush rounded mb-5" id="accordionServices">
-                <div class="accordion-item bg-transparent">
-                  <h2 class="accordion-header" id="headInventory">
-                    <button class="accordion-button fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#inventory" aria-expanded="true" aria-controls="inventory">
-                      Satellite-derived City-wide Green Space Inventory
-                    </button>
-                  </h2>
-                  <div id="inventory" class="accordion-collapse collapse show" aria-labelledby="headInventory" data-bs-parent="#accordionServices">
-                    <div class="accordion-body text-light fs-5">
-                      <p>ARGANS acquire commercial Very High Resolution (VHR) satellite images, which have a spatial resolution of less than 50cm, that enables us to detect and identify individual urban trees and to classify them accordingly e.g.,  species, height, crown diameter etc.</p>
-                      <p>Satellite remote sensing allows us to do this for the entire city, and prepare an accurate chart of green spaces within the city and a detailed inventory of the public and private individual trees, shrubs and grass.</p>
-                      <p><em>This service is billed at € 2,500 excluding tax + € 50 per square kilometre of area analyzed.</em></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item bg-transparent ">
-                  <h2 class="accordion-header" id="headQuantify">
-                    <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#quantify" aria-expanded="false" aria-controls="quantify">
-                      Quantifying the Effect of Green Space on Air Quality
-                    </button>
-                  </h2>
-                  <div id="quantify" class="accordion-collapse collapse" aria-labelledby="headQuantify" data-bs-parent="#accordionServices">
-                    <div class="accordion-body text-light fs-5">
-                      <p>Knowledge of species and characteristics of the urban greenery allows us to estimate the environmental benefits of the urban tree heritage in measurable units at the scale of the entire city.</p>
-                      <p>We provide quantified estimates of carbon storage, carbon dioxide sequestration, and air pollutant removal capacity in units of tons of nitrogen dioxide, ozone, and particles per year.</p>
-                      <p>To quantify the benefits we provide charts of Urban Heat Islands for the entire city and an estimate of thermal comfort (Universal Thermal Comfort Index).</p>
-                      <p><em>This service costs from € 2,500 excluding tax.</em></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item bg-transparent ">
-                  <h2 class="accordion-header" id="headRecommend">
-                    <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#recommend" aria-expanded="false" aria-controls="recommend">
-                      Recommendations for Clean Air and Greening Plans
-                    </button>
-                  </h2>
-                  <div id="recommend" class="accordion-collapse collapse" aria-labelledby="headRecommend" data-bs-parent="#accordionServices">
-                    <div class="accordion-body text-light fs-5">
-                      <p>ARGANS are not only providing the eye from the sky perspective. Our skilled staff offer consultancy services providing 'best practice' recommendations for urban regreening projects.</p>
-                      <p>Depending on your territory and environmental conditions ARGANS provides a list of suitable species to plant for healthier air in the city and open areas available. Each tree species is assessed for its resistance to local conditions (e.g., drought tolerance, pests and diseases), biological characteristics and capacity to absorb air pollutants.</p>
-                      <p>We also provide training to authorities in the development of Urban Greening Plans and monitoring the execution and efficacy.</p>
-                      <p><em>This service is billed at € 5,000 excluding tax + € 50 per square kilometre of area analyzed.</em></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item bg-transparent ">
-                  <h2 class="accordion-header" id="headingAssess">
-                    <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#assess" aria-expanded="false" aria-controls="assess">
-                      Assessment of Health and Economic Benefits
-                    </button>
-                  </h2>
-                  <div id="assess" class="accordion-collapse fs-3 collapse" aria-labelledby="headAssess" data-bs-parent="#accordionServices">
-                    <div class="accordion-body text-light fs-5">
-                      <p>To fully appreciate the benefits of an Urban Greening Plan, ARGANS quantifies the socio-economic benefits derived from planting programs in a given area in units policy makers understand: reduction in premature deaths and hospitalizations for respiratory and cardiovascular illnesses and the related costs.</p>
-                      <p><em>This service costs from € 1,500 excluding tax.</em></p>
-                    </div>
-                  </div>
-                </div>
+            <p class="text-dark">Dr Sicard, is an expert on the impact assessment of air pollution and climate change on vegetation and urban forestry, with over 80 peer-reviewed publications. He is Deputy Coordinator of the RG 8.04.00 "Air Pollution & Climate Change" under the International Union of Forest Research Organizations (IUFRO), involved as UNECE Expert Panel on Clean Air in Cities and active in the EU Clean Air Forum.</p>
+          </div>
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center">
+              <h1>Contact Us</h1>
+              <p class="text-dark">Request a consultation to discuss how ARGANS might assist with your municipal greening strategy.</p>
+              <div class="text-center py-3">
+                <a class="btn btn-primary btn-lg" onclick="decode('cHNpY2FyZEBhcmdhbnMuZXUK')" role="button" id="cta">Email Green City</a>
               </div>
             </div>
-            <figure>
-              <source media="(min-width:1280px)" srcset="img/gfx/output_00_2400x1550.png">
-              <source media="(max-width:800px)" srcset="img/gfx/output_00_768x495.jpg">
-              <img src="img/gfx/output_00_1024x659.jpg" class="figure-img fluid-img rounded mt-3 px-0 px-lg-3" width="100%" alt="individual trees seen from satellite">
-              <figcaption class="figure-caption text-light text-center fs-4 my-3">Very High Resolution (VHR) satellite images allows individual trees to be detected and species identified, rendered here in different colours, providing an accurate inventory of urban flora and mitigation effect on air quality and carbon footprint.</figcaption>
-            </figure>
-          </section>
-        </article>
-        <aside class="d-flex flex-column col-12 p-3 align-items-center justify-content-between text-center" id="sidebar">
-          <section class="row" aria-labelledby="Air Quality">
-            <div class="col-12 col-md-6">
-              <div class="col d-flex justify-content-center">
-                <a class="text-decoration-none" href="#airQuality">
-                  <div class="card mb-3 text-dark mx-auto" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4 text-center my-auto">
-                        <picture>
-                          <source media="(min-width:768px)" class="img-fluid rounded-start" srcset="img/icon/air_icon.png">
-                          <img src="img/gfx/WHO_AirPollutionHealth.jpg" class="img-fluid w-100 rounded-start" alt="Green versus polluted city">
-                        </picture>
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body text-center">
-                          <h5 class="card-title">Air Quality &amp; Health</h5>
-                          <p class="card-text">Air pollution is attributed to 11.65% of deaths globally, attributable to 7 million premature deaths annually</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 text-start">
-              <p class="fs-4">Since 2000, the levels of airbourne pollutants in cities has risen significantly. According to a 2022 report, 99% of the world's population breathe air that exceeds the WHO air quality guidelines and contains high levels of pollutants.</p>
-            </div>
-          </section>
-          <section class="row" aria-labelledby="Urban Greening">
-            <div class="col-12 col-md-6">
-              <div class="col d-flex justify-content-center align-items-center">
-                <a class="text-decoration-none" href="#urbanGreening">
-                  <div class="card mb-3 text-dark mx-auto" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4 my-auto">
-                        <picture>
-                          <source media="(min-width:768px)" class="img-fluid rounded-start" srcset="img/icon/greenleaf.png">
-                          <img src="img/gfx/HipHopCaucus.jpg" class="img-fluid rounded-start" alt="Green versus polluted city">
-                        </picture>
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Green Spaces</h5>
-                          <p class="card-text">The European Union commits to planting at least 3 billion additional trees in Europe by 2030.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 text-start">
-              <p class="fs-4">Urban reforestation, i.e., increasing the tree density in cities and peri-urban reforestation near densely populated cities, is a strategy to mitigate the air pollution and climate change effects, enhance biodiversity, and provide recreational areas.</p>
-            </div>
-          </section>
-        </aside>
-        <div class="row text-light text-center text-sm-start px-3 p-md-5 mt-5" id="airQuality">
-          <article class="col-12">
-            <section class="row align-items-start g-5">
-              <div class="col-lg-6">
-                <p class="display-6 text-center mb-5">99% of the global population are breathing poor-quality air</p>
-                <p>According to a 2022 World Health Organisation report almost the entire global population breathe air that exceeds WHO guideline limits and contains high levels of pollutants. Since 2000, the levels of these pollutants in cities has risen significantly.</p>
-                <p>More than half of the world's population lives in cities and many of these cities share the problem of poor air quality. By 2050, 70% of the world's population will reside in urban areas, and outdoor air pollution will lead to about 6.6 million premature deaths and widespread loss of healthy years of life. Air pollution is the leading environmental health risk factor globally. The pollutants of major public health concern include fine particulate matter, nitrogen dioxide, ozone, carbon monoxide, and sulphur dioxide. </p>
-                <p class="lead my-3">Death and ill health attributable to air pollution is now estimated to be on a par with other major global health risks. Lowering air pollution levels can reduce the incidence of disease from stroke, heart disease, lung cancer, and both chronic and acute respiratory diseases. [WHO 2021]</p>
-                <p class="mb-3">Air quality is closely linked to the earth's climate and ecosystems globally. Many of the drivers of air pollution (i.e. combustion of fossil fuels) are also sources of greenhouse gas emissions. Reducing air pollution levels can contribute to the near- and long-term mitigation of climate change.</p>
-              </div>
-              <div class="col-lg-6">
-                <h1 class="text-center mb-3">Policies for a cleaner urban environment</h1>
-                <p>In 2015, the World Health Assembly adopted a landmark resolution on air quality, recognising it as one of the leading avoidable cause of death and ill health. Member states pledged to tackle the problem.</p>
-                <p>The European Environment Agency 2021 Zero Action Plan sets the target to reduce the number of premature deaths due to exposure to fine particulate matter by 55% by 2030, as compared to 2005. [EEP 2021]</p>
-                <p>The European regulations for air quality (e.g., Air Quality Directive 2008/50/EC) and other environmental policies (e.g., EU Biodiversity Strategy 2030; EU Pollinators Initiative) commit territories and cities of at least 20,000 inhabitants to publish their Carbon Footprint every three years, a Territorial Climate Air and Energy Plan every five years and to develop an Urban Greening Plan.</p>
-                <picture>
-                  <img src="img/gfx/BenefitsUrbanFlora.png" class="img-fluid rounded mt-3" alt="Benefits of Urban Flora">
-                  <figcaption class="figure-caption text-light text-center fs-6 py-3">Urban planting and re-naturing or 'greening' public spaces has a major role in reducing air pollution and improving air quality, mitigating climate change effects, enhancing biodiversity, and promoting 'wellness' by providing recreational areas and fostering social cohesion.</figcaption>
-                </picture>
-              </div>
-            </section>
-          </article>
-        </div>
-        <div class="row text-light text-center text-sm-start px-3 m-0 p-md-5 mt-3" id="urbanGreening">
-          <article class="col-12">
-            <section class="row align-items-end g-5">
-              <div class="col-xl-7">
-                <h1 class="mb-3 text-start">Greener Cities, Cleaner Air</h1>
-                <p>Urban reforestation, i.e., increasing the tree density in cities and peri-urban reforestation near densely populated cities, is a strategy to mitigate the air pollution and climate change effects, enhance biodiversity, and provide recreational areas.</p>
-                <p>Planting trees can help improve air quality and meet clean air standards in cities. Trees have a remarkable range of traits that can help reduce urban air pollution, and cities around the world are looking to develop planting strategies to harness the benefits of public green spaces.</p>
-                <blockquote class="blockquote text-center my-5">
-                  <p class="mt=3 fs-3">Our promise to plant 3 billion additional trees is all about planting the right trees, in the right place, for the right purpose.</p>
-                  <footer class="blockquote-footer fs-5">Virginijus Sinevičius, <cite title="European Commission">European Commission</cite></footer>
-                </blockquote>
-                <p>To set up ambitious greening plans adapted to actual needs, city planners need a suitable selection of plant species and a realistic tree inventory (public and private) to properly assess the role of urban green spaces in mitigating air pollution and climate change effects in and around the cities.</p>
-                <p class="lead">Urban planting and re-naturing or 'greening' public spaces has a major role in reducing air pollution and improving air quality, mitigating climate change effects, enhancing biodiversity, and promoting 'wellness' by providing recreational areas and fostering social cohesion.</p>
-              </div>
-              <div class="col-xl-5 p-0">
-                <div class="accordion accordian-flush rounded m-3" id="accordionBenefits">
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headImproveAir">
-                      <button class="accordion-button fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#improveAir" aria-expanded="true" aria-controls="improveAir">
-                        Improve Air Quality
-                      </button>
-                    </h2>
-                    <div id="improveAir" class="accordion-collapse collapse show" aria-labelledby="headImproveAir" data-bs-parent="#accordionBenefits">
-                      <div class="accordion-body text-light fs-5">
-                        <p>Trees absorb atmospheric pollutants, like sulphur dioxide and nitrogen dioxide, through their leaves and filter fine particulates by deposition on foliage, from where rain washes it into the drain. Absorbing carbon dioxide and releasing oxygen during the day green plants also enhance air quality.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headReduceHeat">
-                      <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#reduceHeat" aria-expanded="false" aria-controls="reduceHeat">
-                        Reduce Urban Heat
-                      </button>
-                    </h2>
-                    <div id="reduceHeat" class="accordion-collapse collapse" aria-labelledby="headImproveAir" data-bs-parent="#accordionBenefits">
-                      <div class="accordion-body text-light fs-5">
-                        <p>Trees provide a cooling effect through creating shady spots but also by the process by which energy from the sun evaporates water that has been transpired from roots to leaves. This reduces the solar energy available for warming the air.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headBiodiversity">
-                      <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#biodiversity" aria-expanded="false" aria-controls="biodiversity">
-                        Protect Biodiverity
-                      </button>
-                    </h2>
-                    <div id="biodiversity" class="accordion-collapse collapse" aria-labelledby="headBiodiversity" data-bs-parent="#accordionBenefits">
-                      <div class="accordion-body text-light fs-5">
-                        <p>Urban re-forestation and renaturing provides havens for wildlife, protecting biodiversity. Green channels can link and help maintain habitats supporting and preserving threatened species and ecosystems.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headWellbeing">
-                      <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#wellbeing" aria-expanded="false" aria-controls="wellbeing">
-                        Promote Wellbeing
-                      </button>
-                    </h2>
-                    <div id="wellbeing" class="accordion-collapse collapse" aria-labelledby="headWellbeing" data-bs-parent="#accordionBenefits">
-                      <div class="accordion-body text-light fs-5">
-                        <p>Outdoor activities and social interactions are essential to human health, development and wellbeing. Public green spaces satisfy a vital role in creating safe and healthy areas of enhanced natural beauty for leisure and social activities.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headResilience">
-                      <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resilience" aria-expanded="false" aria-controls="resilience">
-                        Climate Resilience
-                      </button>
-                    </h2>
-                    <div id="resilience" class="accordion-collapse collapse" aria-labelledby="headResilience" data-bs-parent="#accordionBenefits">
-                      <div class="accordion-body text-light fs-5">
-                        <p>Trees have a direct mitigating effect by sequestering carbon dioxide from the atmosphere and offset an urban carbon footprint. By maintaining soil stability and reducing sediment run-off trees help reduce the risk of erosion and, by replacing asphalt and concrete, increase permeability to ameliorate flooding.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </article>
-          <article class="col-12 mt-5">
-            <section class="row align-items-end g-5">
-              <div class="col-lg-6">
-                <h1>Impact Assessment</h1>
-                <p class="lead">Not every tree species is suitable for urban planting. Air pollution removal by trees strongly depends on the location, tree species, and structural characteristics of individual trees, such as tree height, leaf area index, and crown diameter.</p>
-                <p>To date, urban trees' air pollution removal capacity have been investigated in a few cities through municipal tree inventories,  mainly based on field observations and mapped in Geographical Information Systems. Some, like the  i-Tree ECO model (US Department of Agriculture), include cloud sourcing components and air quality metrics but usually these inventories include only trees managed by the municipality, which can represent as low as 20-30% of the total number of urban trees.</p>
-                <p>The main limiting factor for studying individual trees is the high cost and spatial resolution of techniques, such as aerial photography and airborne laser scanning.</p>
-              </div>
-              <div class="col-lg-6">
-                <p>Mistakes have been made, some municipalities have hurriedly planted wrong tree species, and these planting strategies have degraded air quality and increased asthma exacerbation. For example, Aspen and poplar are members of a tree genus that emits high levels of isoprene, that reacts with sunlight and NOx to produce ozone. </p>
-                <div class="col d-flex justify-content-center align-items-center px-3">
-                  <div class="card text-dark" style="max-width: 800px;">
-                    <div class="row g-0">
-                      <div class="col-xl-4 text-center m-auto">
-                        <img src="img/gfx/Isoprene.svg" class="img-fluid rounded-start" alt="Isoprene Molecule">
-                      </div>
-                      <div class="col-xl-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Isoprene</h5>
-                          <p class="card-text">Isoprene is ubiquitous. It is the building block of terpenes and these Volatile Organic Compound (VOC) poses both a primary health risk and indirectly through photochemical reactions producing ozone and PM25 particulates, elements of smog.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <p class="mt-3">Harnessing urban green spaces efficiently is "...all about planting the <em>right</em> trees, in the <em>right</em> place, for the <em>right</em> purpose". ARGANS can support you make the <em>right</em> choices when planning urban planting schemes.</p>
-              </div>
-            </section>
-          </article>
-        </div>
-        <div class="row text-light text-center text-sm-start px-3 m-0 p-md-5 g-5" id="services">
-          <article class="col-12">
-            <div class="text-center">
-              <p class="display-6">Uniquely, compared to competitors, our process offers an end-to-end management solution to support municipal planting strategies according to "best practices" recommendations.</p>
-            </div>
-            <section class="row align-items-start mt-5 g-5">
-              <div class="col-12 col-lg-5 p-0">
-                <div class="accordion accordian-flush rounded" id="accordionAdvantages">
-                  <div class="accordion-item bg-transparent">
-                    <h2 class="accordion-header" id="headGreeningPlan">
-                      <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#greeningPlan" aria-expanded="true" aria-controls="greeningPlan">
-                        ARGANS can assist in developing a suitable, fit-for-purpose, sustainable urban re-naturing and re-forestation plan to reach air quality standards...
-                      </button>
-                    </h2>
-                    <div id="greeningPlan" class="accordion-collapse collapse show" aria-labelledby="headGreeningPlan" data-bs-parent="#accordionAdvantages">
-                      <div class="accordion-body text-light fs-6">
-                        <p>This is the aim of ARGANS Green City, to provide authorities with expert recommendations in selecting suitable tree species, mapping available open areas for planting, maintaining a complete inventory of individual trees, and providing accurate metrics to measure the benefits of cleaner air and increased shade.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headAccuracy">
-                      <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accuracy" aria-expanded="false" aria-controls="accuracy">
-                        ... by providing a full and accurate inventory of public and private trees within an area of interest ...
-                      </button>
-                    </h2>
-                    <div id="accuracy" class="accordion-collapse collapse" aria-labelledby="headAccuracy" data-bs-parent="#accordionAdvantages">
-                      <div class="accordion-body text-light fs-6">
-                        <p>We use very high spatial resolution satellite imagery to detect individual trees within the chosen city limits, both public and privately owned (which can be up to 80% of the total). We provide precise data on the location, species and structural characteristics of trees in the inventory.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headSurvey">
-                      <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#survey" aria-expanded="false" aria-controls="survey">
-                        ... at a fraction of the cost and time of surveying a using traditional means ...
-                      </button>
-                    </h2>
-                    <div id="survey" class="accordion-collapse collapse" aria-labelledby="headSurvey" data-bs-parent="#accordionAdvantages">
-                      <div class="accordion-body text-light fs-6">
-                        <p>Surveying 5,000 public tree per km2 will take around 1000 hours of field investigation, more than 0.5 person hours per year per km2. Using ARGANS will reduce manual labour by at least 50%, with a saving due to using the service of 30k€ per year.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headFootprint">
-                      <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#footprint" aria-expanded="false" aria-controls="footprint">
-                        ... to quantify the impact of the trees and vegetation on the urban carbon footprint ...
-                      </button>
-                    </h2>
-                    <div id="footprint" class="accordion-collapse collapse" aria-labelledby="headFootprint" data-bs-parent="#accordionAdvantages">
-                      <div class="accordion-body text-light fs-6">
-                        <p>City authorities use an inventory of public trees to report their carbon footprint, along with the estimate of residential and industrial carbon. This underestimates tree numbers by up to 80%. We provide precise calculation of the carbon footprint and GHG sequestration by urban trees.</p>
-                        <p>Total savings due to the service would be in the region of 50-60k€ every three years.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item bg-transparent ">
-                    <h2 class="accordion-header" id="headMitigation">
-                      <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mitigation" aria-expanded="false" aria-controls="mitigation">
-                        ... and provide accurate assessment of the mitigating effect on air quality due to the effect of urban trees.
-                      </button>
-                    </h2>
-                    <div id="mitigation" class="accordion-collapse collapse" aria-labelledby="headMitigation" data-bs-parent="#accordionAdvantages">
-                      <div class="accordion-body text-light fs-6">
-                        <p>Some public authorities are developing methodologies but seldom account for air quality. With a full tree inventory, including number, species and individual characteristics, we are able to provide precise and accurate estimates of the environmental effects of planting.</p>
-                        <p>Total saving due to the service in the order of 100k€ every five years.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-7">
-                <p class="lead">Our innovative range of services have been developed over more than a decade working to support European air quality regulations and have been deployed and validated across Europe including: Aix-en-Provence (France), Florence and Milan (Italy), Valencia (Spain), and Kaunas (Lithuania).</p>
-                <h1>Case Studies</h1>
-                <p>In 2019, 29 and 69 premature deaths and 189 and 416 hospital admissions could have been "avoided" by respecting the World Health Organization annual limit values in Aix and Florence, respectively.</p>
-                <p>This was the sobering conclusion of an ARGANS Case Study of two European cities. On the other hand, by selecting efficient plant species and developing an ambitious urban greening strategy,  ARGANS could provide a detailed estimate of improvements to meet the city's air quality standards.</p>
-                <p>For instance, each newly reforested area (based on 400 trees) will remove annually at least 3.0 tons of O3, 2.5t NO2, 1.5t PM10, 0.8t PM2.5, 10t CO2, and lead to an ambient air two °C cooler compared to the surrounding area and increased carbon stocks (2t per ha).</p>
-                <p>With the above air pollution reduction, two premature deaths and ten hospital admissions for respiratory and cardiovascular diseases could be "avoided" annually. Each newly reforested area could prevent damages valued at €173,000 per year due to the quantity of O3, NO2, PM and CO2 removed. The newly reforested area can also markedly improve citizens' quality of life by providing a space to meet others, play sports and participate in an active, healthy lifestyle.</p>
-              </div>
-            </section>
-            <section class="container-fluid mt-5">
-              <div id="imageGallery" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <picture>
-                      <source media="(min-width:1280px)" srcset="img/gfx/output_02_900x640.png">
-                      <source media="(max-width:800px)" srcset="img/gfx/output_02_450x320.jpg">
-                      <img class="d-block w-100" src="img/gfx/output_02_900x640.jpg" alt="Aix-en-Provence, France"/>
-                      <figcaption class="figure-caption text-light text-center fs-6 my-3">Aix-en-Provence, France</figcaption>
-                    </picture>
-                  </div>
-                  <div class="carousel-item">
-                    <picture>
-                      <source media="(min-width:1280px)" srcset="img/gfx/output_01_900x640.png">
-                      <source media="(max-width:800px)" srcset="img/gfx/output_01_450x320.jpg">
-                      <img class="d-block w-100" src="img/gfx/output_01_900x640.jpg" alt="Aix-en-Provence, France"/>
-                      <figcaption class="figure-caption text-light text-center fs-6 my-3">Aix-en-Provence, Stade Georges Carcassonne</figcaption>
-                    </picture>
-                  </div>
-                  <div class="carousel-item">
-                    <picture>
-                      <source media="(min-width:1280px)" srcset="img/gfx/output_03_900x640.png">
-                      <source media="(max-width:800px)" srcset="img/gfx/output_03_450x320.jpg">
-                      <img class="d-block w-100" src="img/gfx/output_03_900x640.jpg" alt="Aix-en-Provence, tree identification"/>
-                      <figcaption class="figure-caption text-light text-center fs-6 my-3">Aix-en-Provence, tree identification</figcaption>
-                    </picture>
-                  </div>
-                  <div class="carousel-item">
-                    <picture>
-                      <source media="(min-width:1280px)" srcset="img/gfx/output_04_900x640.png">
-                      <source media="(max-width:800px)" srcset="img/gfx/output_04_450x320.jpg">
-                      <img class="d-block w-100" src="img/gfx/output_04_900x640.jpg" alt="Florence, Atletica Firenze Marathon"/>
-                      <figcaption class="figure-caption text-light text-center fs-6 my-3">Florence, Atletica Firenze Marathon</figcaption>
-                    </picture>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#imageGallery" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#imageGallery" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="false"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </section>
-            <section class="row mt-5" aria-labelledby="AboutUs">
-              <div class="col-12 col-md-6">
-                <h1 class="mt-xxl-5">About Us</h1>
-                <p class="lead mb-3">ARGANS Limited, is a fast-growing UK SME that has a reputation for excellence in delivering Earth Observation satellite remote sensing applications and services, innovative solutions in data analytics, Geographical Information Systems and the use of remote sensing data to support satellite derived bathymetry, coastal charting and mapping, climate change monitoring, environmental information, and geospatial intelligence.</p>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="col d-flex align-items-center">
-                  <div class="card mb-3 text-dark mx-auto" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Dr Pierre Sicard</h5>
-                          <p class="card-text"><small class="text-dark">Co-ordinator & Lead Scientist</small></p>
-                        </div>
-                      </div>
-                      <div class="col-md-4 text-center my-auto">
-                        <img src="img/gfx/PierreSicard.jpg" class="img-fluid rounded-start" alt="Photo of Pierre Sicard">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <p>Dr Sicard, is an expert on the impact assessment of air pollution and climate change on vegetation and urban forestry, with over 80 peer-reviewed publications. He is Deputy Coordinator of the RG 8.04.00 "Air Pollution & Climate Change" under the International Union of Forest Research Organizations (IUFRO), involved as UNECE Expert Panel on Clean Air in Cities and active in the EU Clean Air Forum.</p>
-              </div>
-              <div class="jumbotron jumbotron-fluid">
-                <div class="container text-center">
-                  <h1>Contact Us</h1>
-                  <p>Request a consultation to discuss how ARGANS might assist with your municipal greening strategy.</p>
-                  <div class="text-center py-3">
-                    <a class="btn btn-primary btn-lg" onclick="decode('cHNpY2FyZEBhcmdhbnMuZXUK')" role="button" id="cta">Email Green City</a>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </article>
-        </div>
+          </div>
+        </section>
       </div>
     </main>
 
@@ -571,9 +285,9 @@
         <div class="col-md-6 col-lg-2 text-center">
           <h1 class="mb-3">Follow</h1>
           <div class="d-flex justify-content-center" id="social-media">
-            <a class="btn btn-primary me-3" href="https://linkedin.com/company/419849?trk=prof-exp-company-name" role="button"><i class="fa fa-linkedin"></i></a>
-            <a class="btn btn-primary" href="https://twitter.com/ARGANS_Ltd" role="button"><i class="fa fa-twitter"></i></a>
-            <a class="btn btn-primary ms-3" href="https://facebook.com/Argans-Ltd-398626617605986/" role="button"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-primary me-3" href="https://linkedin.com/company/419849?trk=prof-exp-company-name" role="button"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="btn btn-primary" href="https://twitter.com/ARGANS_Ltd" role="button"><i class="fa-brands fa-twitter"></i></a>
+            <a class="btn btn-primary ms-3" href="https://facebook.com/Argans-Ltd-398626617605986/" role="button"><i class="fa-brands fa-facebook"></i></a>
           </div>
           <div class="mt-5 mb-3">
             <p>ARGANS is an ISO9001 certified company</p>
@@ -645,6 +359,7 @@
           </div>
         </div>
       </div>
+      <p><a href="index_alt.html"><i class="fa-regular fa-archway text-secondary"></i></a></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
